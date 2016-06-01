@@ -2,20 +2,24 @@
 
 **[work in progress]**
 
-## Problems
+- computers are great
+- internet has changed the way we access and distribute information
+- but not the way we think and reason like the printing press did
 
-### Data Silos
+## What's wrong with computing?
+
+### Data silos
 
 - sending files is harder than it should be
 - displaying arbitrary files is hard
 - need to transform files for different devices
-- need to export files for publishing
 - files need to be manually synchronized between devices
 - can't access my environment from other devices
 - there are too many messaging providers
 - serialization
+- consortiums decide what can be done (W3C, Unicode)
 
-### Consumption Oriented
+### Consumption orientation
 
 - creating a simple program requires complicated tools
 - authoring software requires learning unnecessary things like syntax
@@ -25,10 +29,8 @@
 - managing memory and persisted data
 - not everybody uses version control
 - computers are still not used for dynamic learning
-
-### Closed Formats
-
-- consortiums decide what can be done (W3C, Unicode)
+- need to export files for publishing
+- PDF cannot be edited (not even move pages)
 
 ### Centralisation
 
@@ -37,12 +39,12 @@
 - having to hand over personal data to companies to use their services
 - browsers only speak one language
 
-### Identity Ownership
+### Identity ownership
 
 - that every service requires a new identity which doesn't belong to me
 - my reputation and information does not belong to me
 
-### Security
+### Permission models
 
 - fishing, cross site scripting and session hijacking
 - passwords
@@ -52,12 +54,47 @@
 - websites can't integrate with my system
 
 
-## Solution
+## What can we do better?
 
-### All Objects
+### Composition
 
-### Universal Name Space
+Cells in cells
+
+### Abstraction
+
+Cells inherit from cells
+
+### Communication
+
+Cells send each other messages (which are also cells)
+
+### Reaction
+
+Cells react to messages
+
+### Connection
+
+Cells can talk to any other cell in the world
 
 ### Distribution
 
-### Cryptgraphic Identities
+Cells are not bound to hardware
+
+### Concurrency
+
+Cells don't have to wait for other cells
+
+### Identification
+
+Cells use asymmetric keys to identify themselves
+
+### Encryption
+
+Only the receiver can read a message
+
+### Version
+
+Cells know their past and future
+
+
+## How does that solve anything?
