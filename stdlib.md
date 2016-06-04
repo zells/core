@@ -2,7 +2,7 @@
 
 **[work in progress]**
 
-This document describes the *zells* standard library which is implemented natively.
+This document describes the *zells* standard library which is partly implemented natively.
 
 ## Reflection
 

@@ -2,15 +2,16 @@
 
 **[work in progress]**
 
-This document describes the *zells* protocol for delivering messages.
+This document describes the *zells* protocol for delivering messages between nodes.
 
 ## Signals
 
-- deliver: delivery (context, target, message, role)
-- received: path
-- fail: reason
-- join: path, connection (e.g. host:port)
-- ok
+- DELIVER: delivery (context, target, message, role)
+- RECEIVED: path
+- OK
+- FAILED: reason
+- JOIN: path, connection (e.g. host:port)
+- LEAVE: path
 
 ## Syntax
 

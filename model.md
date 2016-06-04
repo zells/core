@@ -2,7 +2,7 @@
 
 **[work in progress]**
 
-This document describes the programming model of *zells*.
+This document describes the structure and semantics of the *zells* programming model.
 
 ## Cell
 
