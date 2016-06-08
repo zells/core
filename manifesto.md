@@ -56,13 +56,21 @@
 
 ## What can we do better?
 
+### Simplification
+
+Only cells
+
+### Identification
+
+Cells have names
+
 ### Composition
 
-Cells in cells
+Cells have children
 
 ### Abstraction
 
-Cells inherit from cells
+Cells inherit from stems
 
 ### Communication
 
@@ -74,7 +82,7 @@ Cells react to messages
 
 ### Connection
 
-Cells can talk to any other cell in the world
+Cells can talk to any other cell in the universe
 
 ### Distribution
 
@@ -84,7 +92,7 @@ Cells are not bound to hardware
 
 Cells don't have to wait for other cells
 
-### Identification
+### Authentication
 
 Cells use asymmetric keys to identify themselves
 
@@ -94,7 +102,7 @@ Only the receiver can read a message
 
 ### Version
 
-Cells know their past and future
+Cells know their past and futures
 
 
 ## How does that solve anything?
