@@ -56,53 +56,29 @@
 
 ## What can we do better?
 
-### Simplification
+### Structured
 
-Only cells
+- Simplification: Only cells
+- Identification: Cells have names
+- Composition: Cells have children
+- Abstraction: Cells inherit from stems
 
-### Identification
+### Dynamic
 
-Cells have names
+- Communication: Cells send each other messages (which are also cells)
+- Reaction: Cells react to messages
+- Version: Cells know their past and futures
 
-### Composition
+### Distributed
 
-Cells have children
+- Connection: Cells can talk to any other cell in the universe
+- Migration: Cells are not bound to hardware
+- Concurrency: Cells don't have to wait for other cells
 
-### Abstraction
+### Secure
 
-Cells inherit from stems
-
-### Communication
-
-Cells send each other messages (which are also cells)
-
-### Reaction
-
-Cells react to messages
-
-### Connection
-
-Cells can talk to any other cell in the universe
-
-### Distribution
-
-Cells are not bound to hardware
-
-### Concurrency
-
-Cells don't have to wait for other cells
-
-### Authentication
-
-Cells use asymmetric keys to identify themselves
-
-### Encryption
-
-Only the receiver can read a message
-
-### Version
-
-Cells know their past and futures
+- Authentication: Cells use asymmetric keys to identify themselves
+- Encryption: Only the receiver can read a message
 
 
 ## How does that solve anything?
