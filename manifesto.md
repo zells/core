@@ -1,60 +1,89 @@
-# zells - a new way of computing
+# Enabling the Computer Revolution
 
 **[work in progress]**
 
-- computers are great
-- internet has changed the way we access and distribute information
-- but not the way we think and reason like the printing press did
+- we need wide-spread computer literacy
+- therefore creating dynamic models must become easier
 
-## What's wrong with computing?
 
-### Data silos
+## Why is programming hard?
 
+### Segregation
+
+- creating a simple program requires complicated tools
+- computers are still not used for dynamic learning
+
+### Isolation
+
+- sharing is hard
+- pixels and zooming
+- web technologies make layouting and programming harder than it needs to be
+- need to export files for publishing
 - sending files is harder than it should be
 - displaying arbitrary files is hard
 - need to transform files for different devices
 - files need to be manually synchronized between devices
 - can't access my environment from other devices
 - there are too many messaging providers
-- serialization
-- consortiums decide what can be done (W3C, Unicode)
+- browsers only speak one language
+- applications have to be installed
+- websites can't integrate with my system
 
-### Consumption orientation
+### Interactivity
 
-- creating a simple program requires complicated tools
-- authoring software requires learning unnecessary things like syntax
-- pixels and zooming
+- files always need to be interpreted
 - files are unstructured and it's uncommon to create structure
-- web technologies make layouting and programming harder than it needs to be
-- managing memory and persisted data
-- not everybody uses version control
-- computers are still not used for dynamic learning
-- need to export files for publishing
 - PDF cannot be edited (not even move pages)
 
-### Centralisation
+### Safety
 
-- sharing data requires upload to service provider
-- publishing anything requires to put the content on someone elses computer
-- having to hand over personal data to companies to use their services
-- browsers only speak one language
+- data loss
+- not everybody uses version control
+- things need to be explicitly stored to disk
 
-### Identity ownership
-
-- that every service requires a new identity which doesn't belong to me
-- my reputation and information does not belong to me
-
-### Permission models
+### Security
 
 - fishing, cross site scripting and session hijacking
 - passwords
 - coarse permissions handling
 - most communication is not encrypted with my own key
-- applications have to be installed
-- websites can't integrate with my system
+
+### Autonomy
+
+- no need to get permission
+- consortiums decide what can be done (W3C, Unicode)
+- sharing data requires upload to service provider
+- publishing anything requires to put the content on someone else's computer
+- having to hand over personal data to companies to use their services
+- that every service requires a new identity which doesn't belong to me
+- my reputation and information does not belong to me
+
+### Set-up
+
+- getting started takes several steps
+
+### Syntax
+
+- authoring software requires learning unnecessary things like syntax
+
+### Discoverability
+
+- how something is done
+
+### Dependencies
+
+- management
+
+### Serialization
+
+- managing memory and persisted data
+
+### Modelling
+
+- thinking about thinking
 
 
-## What can we do better?
+## What can we do about it?
 
 ### Structured
 
@@ -65,13 +94,13 @@
 
 ### Dynamic
 
-- Communication: Cells send each other messages (which are also cells)
+- Communication: Cells send each other messages
 - Reaction: Cells react to messages
 - Version: Cells know their past and futures
 
 ### Distributed
 
-- Connection: Cells can talk to any other cell in the universe
+- Connection: Cells can talk to any other cell in their universe
 - Migration: Cells are not bound to hardware
 - Concurrency: Cells don't have to wait for other cells
 
@@ -81,4 +110,4 @@
 - Encryption: Only the receiver can read a message
 
 
-## How does that solve anything?
+## How does that make it easier?
