@@ -1,12 +1,46 @@
-# Enabling the Computer Revolution
+# zells - Enabling Software Literacy
 
 **[work in progress]**
 
-- we need wide-spread computer literacy
-- therefore creating dynamic models must become easier
+- the world of computing is divided into users and creators
+- most people can only access a tiny fraction of the power of connected computers
+- for a revolution we need wide-spread computer literacy
+
+In order to achieve wide-spread software literacy, we need a tool that is powerful enough to give its user full access to the capabilities of a global network of computers but that is at the same time simple and fun enough to be used by everybody. The goal of *zells* is to be that tool.
+
+
+## Why do we need software literacy?
+
+### Understanding
+
+- it's everywhere
+- it's not magic
+
+### Learning
+
+- the best way to understand something is to replicate it
+- in a computer you can replicate everything, even abstract concepts
+
+### Thinking
+
+- externalizing mental models is thinking about thinking
+- improves logical thinking
+
+### Collaboration
+
+- we can use dynamic models for discussion
+- improve our understanding of the world
+
+### Power
+
+- making computers do your bidding gives you power
+- much time is spent on things that could be easily automated
 
 
 ## Why is programming hard?
+
+- programming systems are either limited or complex
+- need to remove incidental complexity
 
 ### Segregation
 
@@ -81,6 +115,8 @@
 ### Modelling
 
 - thinking about thinking
+- complex problems are complex
+- logical thinking is hard
 
 
 ## What can we do about it?
