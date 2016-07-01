@@ -26,7 +26,7 @@ The benefits for understanding, learning, thinking, collaboration and empowermen
 
 ## What prevents Software Literacy?
 
-Despite the many advantages of software literacy, learning how to write software is not an easy task nor is practising it a very pleasant one. One reason is certainly the current society and culture which is evidently uninviting for newcomers. But with a larger and more diverse community of software literates, this problem solve itself. Another, more fundamental reason is that solving complex problems is inherently complicated. But the fact that even the simplest problem is unproportionally difficult so solve with software indicates that there must be unnecessary, incidental complications that make it harder than it needs to be.
+Despite the many advantages of software literacy, learning how to write software is not an easy task nor is practising it a very pleasant one. One reason is certainly the current society and culture which is evidently uninviting for newcomers. But with a larger and more diverse community of software literates, this problem solves itself. Another, more fundamental reason is that solving complex problems is inherently complicated. But the fact that even the simplest problem is unproportionally difficult so solve with software indicates that there must be unnecessary, incidental complications that make it harder than it needs to be.
 
 A tool that is to enable software literacy must eliminate most if not all incidental complications. So what are they?
 
@@ -38,9 +38,9 @@ Another reason that prevents a user from modifying a software is that it might b
 
 But even more idiosyncratic are the libraries of a specific platform. There is usually no **discoverability** for which libraries exist and how they are used. Instead, external documentation and help from peers is required for even the simplest tasks that are not memorized.
 
-And even after all platform-specific hurdles are taken, there is no obvious link between the change of a code segment and the effect it has on the program execution. Few development environments provide true **interactivity** when analysing the running program so modifications have an immediate effect. Instead, the program must be re-build and much the previous state recreated.
+And even after all platform-specific hurdles are taken, there is no obvious link between the change of a code segment and the effect it has on the program execution. Few development environments provide true **interactivity** when analysing the running program so modifications have an immediate effect. Instead, the program must be re-build and much of the previous state recreated.
 
-An additional complication when writing software and also building from source is external **dependencies**. Almost every software depends on other software which needs to be acquired and installed in its entirety, even if only a small part is used. This software might itself depend on further software and so on. In the worst case, two dependencies depend on the same software but in different, conflicting versions.
+An additional complication when writing software and also building from source are external **dependencies**. Almost every software depends on other software which needs to be acquired and installed in its entirety, even if only a small part is used. This software might itself depend on further software and so on. In the worst case, two dependencies depend on the same software but in different, conflicting versions.
 
 Managing these dependencies can be avoided by using remote services. But amongst other complications they introduce like authentication, they require **serialization** of all data that is sent or received. This process is often times very cumbersome since a lot of information is lost during serialization which then needs to be restored, usually by hand. Also, any data that needs to be stored, for example in a file or database, must be serialized.
 
@@ -55,13 +55,13 @@ And last but not least, **security** is a major and often times overlooked chall
 
 ## So what's the Solution?
 
-The tool that elimitate all these incidental complications, is a global software platform, consisting of composable, cryptographic, distributed, persistent, dynamic and abstractable objects. Let's call them *cells*.
+The tool that eliminates all these incidental complications, is a global software platform, consisting of *composable*, *cryptographic*, *distributed*, *persistent*, *dynamic* and *abstractable* objects. Let's call them *cells*.
 
 **Composable** - Each cell has a name and can contain any number of other cells. This forms a hierarchy where every cell is uniquely identified by its path. 
 
 **Distributed** - All cells exist in a single hierarchy which is globally shared. It does not matter where a cell is physically located. It can be on your own computer or on any other in the network. It can move between them and even be on multiple at once. 
 
-**Cryptographic** - Ever user can thus access any cell on the platform, but only with a digitally signed permission by its owner. Therefore all users are identified by an asymmetric key pair. 
+**Cryptographic** - Every user can thus access any cell on the platform, but only with a digitally signed permission by its owner. Therefore all users are identified by an asymmetric key pair. 
 
 **Persistent** - Any change to a cell is automatically saved, along with the entire history of all changes, including possibly alternative time lines. 
 
@@ -72,7 +72,7 @@ The tool that elimitate all these incidental complications, is a global software
 
 ## How does this solve anything?
 
-The platform can be accessed through multiple interfaces, including command line. But the most useful one is a virtual canvas that a cell can draw itself on, and through which the user can interact with it. The program needs no installation which minimizes the **set-up** costs. They can be further lowered by providing a web-browser implementation of the interface. Any cell can then be accessed by simply opening a web site.
+The platform can be accessed through multiple interfaces, including command line. But the most useful one is a virtual canvas that a cell can draw itself on, and through which the user can interact with it. The program needs no installation which minimizes the **set-up** costs. These can be further lowered by providing a web-browser implementation of the interface. Any cell can then be accessed by simply opening a web site.
 
 The canvas is used for displaying but also for modifying a cell, either directly through a context menu or by opening an inspector for it. The inspector shows the cell's hierarchy and provides means for standard operations such as renaming, creating, deleting, setting the type and changing the behaviour of a cell. Having a single mode for editing and interaction removes the **segregation** of the two activities. The user can easily and at any time inspect and modify what they sees.
 
@@ -90,7 +90,7 @@ Since every cell is accessible to every user, **sharing** a piece of software is
 
 This way no third party is needed to create and share content. **Autonomy** is further increased by using asymmetric cryptographic keys as identification for users. This allows many operations to be done without a central authority, including *creating an account*, *rating another user* and even *transferring money*. By using digital signatures, data can stay where it belongs - with its owner. This enables a truly open and democratic internet without the artificial switching costs caused by closed data.
 
-Cryptography also enables a high level of security. By default, a cell is only accessible to its owner, who has to digitally sign an explicit permission for anyone else to access it. Permissions can be very fine-grained, specifying the kind of access, its scope and expiration. Permissions are only asked for when needed so the user can understand the reason for giving it and also sees immediately the effect of refusing it. All communication through untrusted channels is encrypted and a user can limit the devices that his cells are replicated to, to avoid them ending up somewhere in the clouds. Digital signatures make impersonations impossible and give each user a virtual identity with its own, valuable and verifiable reputation. And if we're lucky, this could make the internet a much friendlier place.
+Cryptography also enables a high level of **security**. By default, a cell is only accessible to its owner, who has to digitally sign an explicit permission for anyone else to access it. Permissions can be very fine-grained, specifying the kind of access, its scope and expiration. Permissions are only asked for when needed so the user can understand the reason for giving it and also sees immediately the effect of refusing it. All communication through untrusted channels is encrypted and a user can limit the devices that his cells are replicated to, to avoid them ending up somewhere in the clouds. Digital signatures make impersonations impossible and give each user a virtual identity with its own, valuable and verifiable reputation. And if we're lucky, this could make the internet a much friendlier place.
 
 
 ## What's next?
