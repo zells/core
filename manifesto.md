@@ -84,6 +84,8 @@ Using other cells as **dependencies** means simply executing them. Since this ca
 
 Since all cells use a uniform, generic structure that any data type can be mapped to, they never need to be **serialized** manually for communication with external services. Nor for storage since they are automatically persisted.
 
+Because there is no serialization, there is no **syntax**. Instructions of a cell's behaviour are stored in a structured way instead of plain text. Although a higher-level language is necessary to describe behaviours efficiently, any syntax can be used to do so since every syntax can be translated to executing behaviours of composed and abstracted cells. It is even possible to translate between two high-level languages.
+
 Cells are always alive, so they can be directly queried to **discover** their capabilities. The platform can also be used to search cells with a certain capability for example with keywords or by providing an exemplary input and output. And if its behaviour isn't exactly as needed, it can easily be adjusted.
 
 Since every cell is accessible to every user, **sharing** a piece of software is done by simply sending its path to the other user. Cells render themselves, so the receiver is guaranteed that they're displayed to them in exactly the same way as to the creator. All changes are synchronized so both users can edit the cell collaboratively in real-time. The network load can be decreased by automatically replicating the cell on both devices.
