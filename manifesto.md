@@ -11,9 +11,9 @@ To fix this, we need to increase the currently tiny number of people who are abl
 
 ## Why is Software Literacy important?
 
-In a world more and more controller by software, **understanding** how the systems work, that we interact with every day, can eliminates a lot of frustration and superstition. Just as knowing why apples fall down and air planes fly up, the citizens of the 21st century need to know that computers are not magical boxes but composed of dynamic models.
+In a world more and more controller by software, **understanding** how the systems work, that we interact with every day, can eliminate a lot of frustration and superstition. Just as knowing why apples fall down and air planes fly up, the citizens of the 21st century need to know that computers are not magical boxes but composed of dynamic models.
 
-Such model are ideal for **learning** about the inner workings of this universe that we live in. Because the best way to understand something is to try to replicate it. And in the virtual world of computers, everything can be replicated, from complex physical phenomena to abstract ideas, and even your own mind.
+Such models are ideal for **learning** about the inner workings of this universe that we live in. Because the best way to understand something is to try to replicate it. And in the virtual world of computers, everything can be replicated, from complex physical phenomena to abstract ideas, and even your own mind.
 
 To do so requires **thinking** about your own thinking and describing your own, often times unconscious, mental models. This enhances your analytical and logical skills as well as your ability of self-reflection which benefits any part of life.
 
@@ -21,7 +21,7 @@ Once a mental model is externalized as software, it can be shared and improved i
 
 But maybe most important is the **empowerment** that software literacy brings to its holder. Being able to solve your own problems means you no longer depend on somebody else to care, understand and solve them for you. And you can build exactly what you need or adapt something that is close. And by leveraging the power of automation, you can solve your problems faster, and more reliably than by hand.
 
-The benefits for understanding, learning, thinking, collaboration and empowerment of humanity that a wide-spread software literacy would provide will eclipse even the industrial and knowledge revolution. It would be the real computer revolution.
+The benefits for *understanding*, *learning*, *thinking*, *collaboration* and *empowerment* of humanity that a wide-spread software literacy provides would eclipse even the impact of the printing press and the steam engine. It would be a true computer revolution.
 
 
 ## What prevents Software Literacy?
@@ -74,7 +74,7 @@ The tool that eliminates all these incidental complications, is a global softwar
 
 The platform can be accessed through multiple interfaces, including command line. But the most useful one is a virtual canvas that a cell can draw itself on, and through which the user can interact with it. The program needs no installation which minimizes the **set-up** costs. These can be further lowered by providing a web-browser implementation of the interface. Any cell can then be accessed by simply opening a web site.
 
-The canvas is used for displaying but also for modifying a cell, either directly through a context menu or by opening an inspector for it. The inspector shows the cell's hierarchy and provides means for standard operations such as renaming, creating, deleting, setting the type and changing the behaviour of a cell. Having a single mode for editing and interaction removes the **segregation** of the two activities. The user can easily and at any time inspect and modify what they sees.
+The canvas is used for displaying but also for modifying a cell, either directly through a context menu or by opening an inspector for it. The inspector shows the cell's hierarchy and provides means for standard operations such as renaming, creating, deleting, setting the type and changing the behaviour of a cell. Having a single mode for editing and interaction removes the **segregation** of the two activities. The user can easily and at any time inspect and modify what they see.
 
 All this happens live while the object is active and present on the canvas. In this **interactive** environment, the effect of any modification can be immediately seen. Spreadsheet-like applications can be very easily built this way but also way more powerful programs.
 
