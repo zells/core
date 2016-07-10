@@ -2,7 +2,7 @@
 
 Software nowadays is fundamentally broken. It's limited, never quite works the way we want it to, but it can't be changed, can't be combined and can't be trusted.
 
-More and more, users are put into (sometimes golden) cages, and forced to hand over their ideas, personal information, and even identities to international quasi-monopolies that put everything into walled gardens which the creator can only access through tiny keyholes.
+More and more, users are put into - sometimes golden - cages, and forced to hand over their ideas, personal information, and even identities to international quasi-monopolies that put everything into walled gardens which the creator can only access through tiny keyholes.
 
 To fix this, we need to increase the currently tiny number of people who are able to write, modify, combine and share software. We need a tool that makes writing software easy and fun. One that enables software literacy.
 
@@ -30,7 +30,7 @@ A tool that is to enable software literacy must eliminate most if not all incide
 
 The most important one might be the **segregation** of authoring and using software. This prohibits the user from inspecting it in order to understand it on a deeper level and manipulate its data in ways unanticipated by its developers. It also makes modifying it very difficult. Even if it's legally possible, you not only need to access the source code and understand it, you also need to be able to rebuild the program from that source.
 
-To do so, often times causes prohibitive **set-up** costs, not only for the project-specific build system but also for the used software platform. This usually requires some expertise and more often than not the permission to make system-wide changes which is not always given.
+To do so, requires to **set-up** the software platform but also all the software needed to transform the source code into a running program. This usually requires some expertise in the operating system and more often than not the permission to make system-wide changes which is not always given.
 
 Another reason that prevents a user from modifying a software is that it might be written in a **syntax** that is unknown to them, since every software platform dictates its own which must be learned and memorized.
 
