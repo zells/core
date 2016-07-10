@@ -1,7 +1,5 @@
 # Enabling Software Literacy
 
-> "Computer science is not about coding, it's about problem solving." -- *Ashley Gavin*
-
 Software nowadays is fundamentally broken. It's limited, never quite works the way we want it to, but it can't be changed, can't be combined and can't be trusted.
 
 More and more, users are put into (sometimes golden) cages, and forced to hand over their ideas, personal information, and even identities to international quasi-monopolies that put everything into walled gardens which the creator can only access through tiny keyholes.
