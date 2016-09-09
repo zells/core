@@ -28,7 +28,7 @@ Despite the many advantages of software literacy, learning how to write software
 
 A tool that is to enable software literacy must eliminate most if not all incidental complications. So what are these complications?
 
-The most important one might be the **segregation** of authoring and using software. This prohibits the user from inspecting it in order to understand it on a deeper level and manipulate its data in ways unanticipated by its developers. It also makes modifying it very difficult. Even if it's legally possible, you not only need to access the source code and understand it, you also need to be able to rebuild the program from that source.
+The most important one might be the **segregation** of authoring and using software. This prohibits the user from inspecting they software they are using in order to understand it on a deeper level and manipulate its data in ways unanticipated by its developers. It also makes modifying it very difficult. Even if it's legally possible, you not only need to access the source code and understand it, you also need to be able to rebuild the program from that source.
 
 To do so, requires to **set-up** the software platform but also all the software needed to transform the source code into a running program. This usually requires some expertise in the operating system and more often than not the permission to make system-wide changes which is not always given.
 
@@ -53,26 +53,26 @@ And last but not least, **security** is a major and oftentimes overlooked challe
 
 ## So what's the Solution?
 
-The tool that eliminates all these incidental complications, is a global software platform, consisting of *composable*, *cryptographic*, *distributed*, *persistent*, *dynamic* and *abstractable* objects. Let's call them *cells*.
+The tool that eliminates all these incidental complications, is a global software platform, based on a unified programming model consisting of *composable*, *distributed*, *secure*, *persistent*, *dynamic* and *abstractable* objects. Let's call them *cells*.
 
 **Composable** - Each cell has a name and can contain any number of other cells. This forms a hierarchy where every cell is uniquely identified by its path. 
 
-**Distributed** - All cells exist in a single hierarchy which is globally shared. It does not matter where a cell is physically located. It can be on your own computer or on any other in the network. It can move between them and even be on multiple devices at once. 
+**Distributed** - All cells exist in a single, globally shared hierarchy. It does not matter where a cell is physically located. It can be on your own computer or on any other in the network. It can seamlessly move between them and even be on multiple devices at once. 
 
-**Cryptographic** - Every user can thus access any cell on the platform, but only with a digitally signed permission by its owner. Therefore all users are identified by an asymmetric key pair. 
+**Secure** - Every user can access any cell in this hierarchy, but only with a digitally signed permission by its owner. Therefore all user identities and permissions are secured by cryptographic algorithms and asymmetric keys.
 
 **Persistent** - Any change to a cell is automatically saved, along with the entire history of all changes, including possibly alternative timelines.
 
-**Dynamic** - Cells can have behaviour that is executed either directly or by passing another cell as input. This way, a cell can control how it looks and and responds to input.
+**Dynamic** - Cells can have behaviour that is executed either directly or by passing another cell as input. This way, a cell can control how it looks and reacts to input.
 
-**Abstractable** - A cell can be told to imitate another cell. It then always looks and behaves exactly as the other one, except for the parts where it wants to be different. This way, properties shared by several cells can be combined in a single cell which can then be imitated by the cells. 
+**Abstractable** - A cell can be told to imitate another cell. It then always looks and behaves exactly as the other one, except for the parts where it wants to be different. This way, properties shared by several cells can be combined in a single cell and do not need to be duplicated unnecessarily.
 
 
 ## How does this solve anything?
 
-The platform can be accessed through multiple interfaces, including command line. But the most useful one is a virtual canvas that a cell can draw itself on, and through which the user can interact with it. The program needs no installation which minimizes the **set-up** costs. These can be further lowered by providing a web-browser implementation of the interface. Any cell can then be accessed by simply opening a web site.
+The platform can be accessed through multiple interfaces, including command line. But the most useful one is a virtual canvas that cells can draw themselves on, and through which the user can interact with them. The program needs no installation which minimizes the **set-up** costs. These can be further lowered by providing a web-browser implementation of the interface. Any cell can then be accessed and manipulated by simply opening a web site.
 
-The canvas is used for displaying but also for modifying a cell, either directly through a context menu or by opening an inspector for it. The inspector shows the cell's hierarchy and provides a means for standard operations such as renaming, creating, deleting, setting the type and changing the behaviour of a cell. Having a single mode for editing and interaction removes the **segregation** of the two activities. The user can easily and at any time inspect and modify what they see.
+The canvas is used for displaying but also for modifying a cell, either directly through a context menu or by opening an *inspector* for it. The inspector shows the cell's hierarchy and provides a means for standard operations such as renaming, creating, deleting, setting the type and changing the behaviour of a cell. Having a single mode for editing and interaction removes the **segregation** of the two activities. The user can easily and at any time inspect and modify what they see.
 
 All this happens live while the object is active and present on the canvas. In this **interactive** environment, the effect of any modification can be immediately seen. Spreadsheet-like applications can be very easily built this way but also way more powerful programs.
 
