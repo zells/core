@@ -9,7 +9,7 @@ To fix this, we need to increase the currently tiny number of people who are abl
 
 ## Why is Software Literacy important?
 
-In a world more and more controlled by software, **understanding** how the systems that we interact with every day work can eliminate a lot of frustration and superstition. Just as knowing why apples fall down and aeroplanes fly up, the citizens of the 21st century need to know that computers are not magical boxes but composed of dynamic models.
+In a world more and more controlled by software, **understanding** how the systems work that we interact with every day can eliminate a lot of frustration and superstition. Just as knowing why apples fall down and aeroplanes fly up, the citizens of the 21st century need to know that computers are not magical boxes but composed of dynamic models.
 
 Such models are ideal for **learning** about the inner workings of this universe that we live in, because the best way to understand something is to try to replicate it. And in the virtual world of computers, everything can be replicated, from complex physical phenomena to abstract ideas, and even your own mind.
 
@@ -24,11 +24,11 @@ The benefits of *understanding*, *learning*, *thinking*, *collaboration* and *em
 
 ## What prevents Software Literacy?
 
-Despite the many advantages of software literacy, learning how to write software is not an easy task nor is practising it a very pleasant one. One reason is certainly the current society and culture which is evidently uninviting for newcomers. But with a larger and more diverse community of software literates, this problem solves itself. Another, more fundamental reason is that solving complex problems is inherently complicated. But the fact that even the simplest problem is unproportionally difficult so solve with software indicates that there must be unnecessary, incidental complications that make it harder than it needs to be.
+Despite the many advantages of software literacy, learning how to write software is not an easy task nor is practising it a very pleasant one. One reason is certainly the current society and culture of programmers which is evidently uninviting for newcomers. But with a larger and more diverse community of software literates, this problem solves itself. Another, more fundamental reason is that solving complex problems is inherently complicated. But the fact that even the simplest problem is unproportionally difficult so solve with software nowadays, indicates that there must be unnecessary, incidental complications that make it harder than it needs to be.
 
-A tool that is to enable software literacy must eliminate most if not all incidental complications. So what are these complications?
+A tool that is to enable software literacy must eliminate most if not all incidental complications. So what are they?
 
-The most important one might be the **segregation** of authoring and using software. This prohibits the user from inspecting they software they are using in order to understand it on a deeper level and manipulate its data in ways unanticipated by its developers. It also makes modifying it very difficult. Even if it's legally possible, you not only need to access the source code and understand it, you also need to be able to rebuild the program from that source.
+The most important one might be the **segregation** of authoring and using software. This prohibits the user from inspecting the software they are using in order to understand it on a deeper level and manipulate its data in ways unanticipated by its developers. It also makes modifying it very difficult. Even if it's legally possible, you not only need to access the source code and understand it, you also need to be able to rebuild the program from that source.
 
 To do so, requires to **set-up** the software platform but also all the software needed to transform the source code into a running program. This usually requires some expertise in the operating system and more often than not the permission to make system-wide changes which is not always given.
 
@@ -53,9 +53,9 @@ And last but not least, **security** is a major and oftentimes overlooked challe
 
 ## So what's the Solution?
 
-The tool that eliminates all these incidental complications, is a global software platform, based on a unified programming model consisting of *composable*, *distributed*, *secure*, *persistent*, *dynamic* and *abstractable* objects. Let's call them *cells*.
+The tool that eliminates all these incidental complications, is a global software platform, based on a unified programming model consisting of *composable*, *distributed*, *secure*, *persistent*, *dynamic* and *abstractable* objects, called *cells*.
 
-**Composable** - Each cell has a name and can contain any number of other cells. This forms a hierarchy where every cell is uniquely identified by its path. 
+**Composable** - Each cell has a name and can contain any number of other cells. This forms a hierarchy where every cell is uniquely identified by its canonical path. 
 
 **Distributed** - All cells exist in a single, globally shared hierarchy. It does not matter where a cell is physically located. It can be on your own computer or on any other in the network. It can seamlessly move between them and even be on multiple devices at once. 
 
@@ -63,18 +63,18 @@ The tool that eliminates all these incidental complications, is a global softwar
 
 **Persistent** - Any change to a cell is automatically saved, along with the entire history of all changes, including possibly alternative timelines.
 
-**Dynamic** - Cells can have behaviour that is executed either directly or by passing another cell as input. This way, a cell can control how it looks and reacts to input.
+**Dynamic** - Cells have behaviour by reacting to messages consisting of another cell. This way, a cell can control how it looks and reacts to input.
 
-**Abstractable** - A cell can be told to imitate another cell. It then always looks and behaves exactly as the other one, except for the parts where it wants to be different. This way, properties shared by several cells can be combined in a single cell and do not need to be duplicated unnecessarily.
+**Abstractable** - Each cell is deduced from another cell. The new cell inherits the reaction and children of this stem cell which it can then overwrite. This way, properties shared by several cells can be combined in a single cell and do not need to be duplicated unnecessarily.
 
 
 ## How does this solve anything?
 
-The platform can be accessed through multiple interfaces, including command line. But the most useful one is a virtual canvas that cells can draw themselves on, and through which the user can interact with them. The program needs no installation which minimizes the **set-up** costs. These can be further lowered by providing a web-browser implementation of the interface. Any cell can then be accessed and manipulated by simply opening a web site.
+The platform can be accessed through multiple interfaces, including command line. But the most useful one is a virtual canvas that cells can draw themselves on, and through which the user can interact with them. The program needs no installation which minimizes the **set-up** costs. These can be further lowered by providing an implementation that runs inside a web-browser. Any cell can then be accessed and manipulated by simply opening a web site.
 
 The canvas is used for displaying but also for modifying a cell, either directly through a context menu or by opening an *inspector* for it. The inspector shows the cell's hierarchy and provides a means for standard operations such as renaming, creating, deleting, setting the type and changing the behaviour of a cell. Having a single mode for editing and interaction removes the **segregation** of the two activities. The user can easily and at any time inspect and modify what they see.
 
-All this happens live while the object is active and present on the canvas. In this **interactive** environment, the effect of any modification can be immediately seen. Spreadsheet-like applications can be very easily built this way but also way more powerful programs.
+All this happens live while the cell is active and present on the canvas. In this **interactive** environment, the effect of any modification can be immediately seen. This way, Spreadsheet-like applications can be very easily built but also way more powerful programs.
 
 **Data safety** is always provided since every change to a cell is automatically saved and also synchronized to all devices on which the cell exists. Having its history accessible means that changes can be easily analysed and old states restored. A global, infinite undo button.
 
@@ -82,13 +82,13 @@ Using other cells as **dependencies** means simply executing them. Since this ca
 
 Since all cells use a uniform, generic structure that any data type can be mapped to, they never need to be **serialized** manually for communication with external services, nor for storage since they are automatically persisted.
 
-Because there is no serialization, there is no **syntax**. Instructions of a cell's behaviour are stored in a structured way instead of plain text. Although a higher-level language is necessary to describe behaviours efficiently, any syntax can be used to do so since every syntax can be translated to executing behaviours of composed and abstracted cells. It is even possible to translate between two high-level languages.
+Because there is no serialization, there is no **syntax**. Instructions of a cell's behaviour are stored in a structured way instead of plain text. Although a higher-level language is necessary to describe behaviours efficiently, any syntax can be used to do so since every syntax can be translated to executing behaviours of composed and abstracted cells. It is even possible to translate between different high-level languages.
 
 Cells are always alive, so they can be directly queried to **discover** their capabilities. The platform can also be used to search cells with a certain capability for example with keywords or by providing an exemplary input and output. And if the cell's behaviour isn't exactly as needed, it can easily be adjusted.
 
 Since every cell is accessible to every user, **sharing** a piece of software is done by simply sending its path to the other user. Cells render themselves, so the receiver is guaranteed that they're displayed to them in exactly the same way as to the creator. All changes are synchronized so both users can edit the cell collaboratively in real-time. The network load can be decreased by automatically replicating the cell on both devices.
 
-This way no third party is needed to create and share content. **Autonomy** is further increased by using asymmetric cryptographic keys as identification for users. This allows many operations to be done without a central authority, including *creating an account*, *rating another user* and even *transferring money*. By using digital signatures, data can stay where it belongs - with its owner. This enables a truly open and democratic internet without the artificial switching costs caused by closed data.
+This way no third party is needed to create and share content. **Autonomy** is further increased by using asymmetric cryptographic keys as identification for users. This allows many operations to be done without a central authority. By using digital signatures, data can stay where it belongs - with its owner. This enables a truly open and democratic internet without the artificial switching costs caused by closed data.
 
 Cryptography also enables a high level of **security**. By default, a cell is only accessible to its owner, who has to digitally sign an explicit permission for anyone else to access it. Permissions can be very fine-grained, specifying the kind of access, its scope and expiration. Permissions are only asked for when needed so that the user can understand the reasons behind granting it, and the immediate effects of refusing it. All communication through untrusted channels is encrypted and a user can limit the devices that his cells are replicated to, to avoid them ending up somewhere in the clouds. Digital signatures make impersonations impossible and give each user a virtual identity with its own, valuable and verifiable reputation. And if we're lucky, this could make the internet a much friendlier place.
 
