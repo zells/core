@@ -14,6 +14,11 @@ This repository contains documents and specifications describing the *zells* com
 - **[Protocol](protocol.md)** - Protocol for message sending
 
 
+## Contributing
+
+Please don't hesitate to add to any document via pull requests. This can be typos or improvements of the structure or content of document. I will respond as soon as I can.
+
+
 ## License
 
 The documents and software in this repository are licensed under the [GPLv3] License.
