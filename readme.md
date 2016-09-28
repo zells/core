@@ -12,3 +12,10 @@ This repository contains documents and specifications describing the *zells* com
 - **[Model](model.md)** - Structure and semantics of the programming model
 - **[Standard Library](stdlib.md)** - Natively implemented parts
 - **[Protocol](protocol.md)** - Protocol for message sending
+
+
+## License
+
+The documents and software in this repository are licensed under the [GPLv3] License.
+
+[GPLv3]: http://www.gnu.org/licenses/gpl-3.0.html
