@@ -7,6 +7,13 @@ More and more, users are put into - sometimes golden - cages, and forced to hand
 To fix this, we need to increase the currently tiny number of people who are able to write, modify, combine and share software. We need a tool that makes writing software easy and fun. One that enables software literacy.
 
 
+## What's this about?
+
+This document focuses on the problems that *zells* means to solve. The following sections describe why these problems need to be solved, what the problems are, the solution, and finally how it solves each previously described problem. If you've never written a piece of software, most of the described problems will be unknown to you, but some are universal and affect everybody.
+
+The purpose of this document is to provide a basis for discussion about the justification of the project as well as validity and effectiveness of its approach.
+
+
 ## Why is Software Literacy important?
 
 In a world more and more controlled by software, **understanding** how the systems work that we interact with every day can eliminate a lot of frustration and superstition. Just as knowing why apples fall down and aeroplanes fly up, the citizens of the 21st century need to know that computers are not magical boxes but composed of dynamic models.
