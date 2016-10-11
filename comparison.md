@@ -1,61 +1,34 @@
 # Comparing *zells*
 
-The goal of *zells* is to remove all incidental complications found in current software platforms. The [manifesto](manifesto.md) describes these complications in a rather abstract manner. The purpose of this document is to look at a selection of platforms more closely and how certain complications materialize in them.
+The goal of *zells* is to remove all incidental complications found in current software platforms. The [manifesto] describes these complications in a rather abstract manner. The purpose of this document is to look at a selection of current platforms more closely and how certain complications materialize in them.
 
-Restricted by my own knowledge, the list of platforms is all but complete and not every complication is discussed for every platform. Please help improving this document.
+Restricted by my own knowledge, the list of platforms is all but complete and not every complication is discussed for every platform. If you find something missing, wrong or imprecise, please [help improving][pulls] this document.
 
+For an up-to-date list and description of identified complications and how they are avoided in *zells*, please refer to the [manifesto].
 
-## Software Platforms
+[manifesto]: https://github.com/zells/core/blob/master/manifesto.md
+[pulls]: https://github.com/zells/core/pulls
 
-The list contains a variety of software products and a set of protocols which I all consider to be *platforms*, since they allow users to create their own, new software which is can be accessed or run through the platform.
+## Platforms
 
-The categories are *protocols* for platforms that are defined by standards rather than an implementation. *Operating systems* is everything which is located directly between user and hardware. Things that could be considered a programming language is categorized under *virtual machines* and everything else is considered an *application*. 
+This list contains a variety of software products and a set of protocols which I all consider to be *platforms*, since they allow users to create their own, new software.
+
+The categories are *protocols* for platforms that are defined by standards rather than an implementation, *operating systems* for everything which is located directly between user and hardware, *virtual machines* are things that could be considered programming languages and everything else is considered an *application*. 
 
 The lines between the categories are somewhat fluent since it could be argued that some virtual machines behave like operating systems and some applications behave like virtual machines.
-
-
-## Avoided Complications
-
-The complications that are analysed for each platform are described in more detail in the [manifesto](manifesto.md). Each of the following paragraphs describes how a specific complication is avoided in *zells*.
-
-**Segregation** writing and running software happens literally in the same mode and space. The only segregation could be seen between *interactions* that aim to modify a cell and such that use the cell for its primary purpose. For example moving a non-draggable cell while lay-outing.
-
-**Set-Up** only the browser is necessary. The software can run on any other computer. Ideally, a browser-version of the the zells browser provides a web-gateway.
-
-**Syntax** It should be possible to use any syntax to write a program for the zells VM. Although I can't prove that. Also, translating between syntax might be possible.
-
-**Discoverability** OK this still is tricky. Any library is browsable since it's all just cells. So looking for a specific cell can be done with the browser. All documentation and examples can be integrated into the cell since it's alive. So if I have a string and I want to know what I can do with this string, I have autocomplete, can browse the cells and try out what they do. People can create their own String cells if they want to that have more or different capabilities.
-
-**Interactivity** This I haven't thought through completely yet. Definitely wanna achieve something similar to Smalltalk. Programming should be completely interactive. But what that means I don't know yet. Shuckles.
-
-**Dependencies** Well there are none. You just use whatever cell exists in the universe. But there still might be different versions. But you can always just use a specific version. Although if you want to change that you may have to change every single usage. Better to keep that in one point. I think that's possible since all paths are resolved upwards. So versioning is still tricky but at least using any number of different versions in a project in no problem anymore.
-
-**Serialization** Completely gone. Talking to external services still require it but because of the completely homogeneous structure everything can be serialized automatically. Except when you talk to stupid services. Then you still need to serialize but it's easier.
-
-**Data Safety** concerns are also gone. Since everything, every single change is saved. Not every message that is sent to a cell but every modification of it.
-
-**Sharing** is super easy because of the low set-up costs and because it's just protocols.
-
-**Autonomy** might be the hardest to argue. The main thing is that authentication and identification is distributed so you don't need a central database for that anymore. Content discovery might still need central gateways but the content itself can be completely distributed as well. And the most important point is that it's easy to create and modify software so no need to wait or depend on somebody else.
-
-**Security** is improved because of the use of cryptography instead of passwords. Cracking and theft is still possible but much harder and because of the identities, scamming is also a lot harder. The trustworthiness of zells users can be estimated by their reputation.
 
 
 ## Protocols
 
 ### WorldWideWeb
 
-**Segregation** is very high since development happens in a completely different environment
-**Set-Up** Is low, only a browser is needed which is pretty much already installed everywhere
-**Syntax** can be any
-**Discoverability** quite good for humans, not so good for machines because of little structure
-**Interactivity** gets better in some browsers, still very bad though
-**Dependencies** depends on the language, web services can be very tricky, mostly because of authentication
-**Serialization** always and everywhere and very annoying
-**Data Safety** better back-up your database
-**Sharing** very easy, all you need is a URL
-**Autonomy** so and so. While it's completely open, it's architecture is rather centralized so infrastructure is needed
-**Security** very low, based on passwords, gets a little better with multi-factor authentication
+For the purpose of this comparison, the WorldWideWeb consists of the specifications of HTTP, HTML and CSS and to a certain extend JavaScript. These are implemented by servers such as Apache and browsers such as Firefox. While HTML offers a straight-forward **syntax**, it is very limited and cannot be extended. And while any language can be used for server-side code, only JavaScript is practical on client side. But at least the **interactivity** when modifying client-side code is improving.
+
+The web browser is only designed for accessing software, not manipulating then, which leads to a very high**segregation** between writing and using web application. While the latter only requires a web browser which is pre-installed on most systems and makes **sharing** applications very easy, the former requires a complicated **set-up** including web server, pre-processors, build tools, a server-side language and usually package managers to download third-party **dependencies**. 
+
+Instead of downloading them, third-party software can also be provided as web services. Besides complicated authentication, and very low **discoverability** because little semantic information, these services require the **serialization** of every single sent and received message.
+
+While invisioned as a distributed system that fosters **autonomy**, the WorldWideWeb turned out to favour centralization. **Security** is maintained by sandboxing web application as much as possible but web application are prone to many attacks such as session hijacking, cross-site scripting, phishing and many more.
 
 ## Operating Systems
 
@@ -302,4 +275,3 @@ The complications that are analysed for each platform are described in more deta
 **Sharing**
 **Autonomy**
 **Security**
-
