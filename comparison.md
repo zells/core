@@ -2,12 +2,12 @@
 
 The goal of *zells* is to remove all incidental complications found in current software platforms. The [manifesto] describes these complications in a rather abstract manner. The purpose of this document is to look at a selection of current platforms more closely and how certain complications materialize in them.
 
-Restricted by my own knowledge, the list of platforms is all but complete and not every complication is discussed for every platform. If you find something missing, wrong or imprecise, please [help improving][pulls] this document.
+Restricted by my own knowledge, the list of platforms is all but complete and not every complication is discussed for every platform. If you find something missing, wrong or imprecise, please [help improving][edit] this document.
 
 For an up-to-date list and description of identified complications and how they are avoided in *zells*, please refer to the [manifesto].
 
 [manifesto]: https://github.com/zells/core/blob/master/manifesto.md
-[pulls]: https://github.com/zells/core/pulls
+[edit]: https://github.com/zells/core/edit/master/comparison.md
 
 ## Platforms
 
