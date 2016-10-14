@@ -1,34 +1,49 @@
 # Comparing *zells*
 
-The goal of *zells* is to remove all incidental complications found in current software platforms. The [manifesto] describes these complications in a rather abstract manner. The purpose of this document is to look at a selection of current platforms more closely and how certain complications materialize in them.
+The goal of *zells* is to enable Software Literacy by providing a software platform without the incidental complications found in current platforms. The [manifesto] describes these complications in details, although in a rather abstract manner. The purpose of this document is to look at a selection of current platforms more closely and how certain complications materialize in them.
 
-Restricted by my own knowledge, the list of platforms is all but complete and not every complication is discussed for every platform. If you find something missing, wrong or imprecise, please [help improving][edit] this document.
+Restricted by my own knowledge, the list of platforms is all but complete and not every complication is discussed for every platform. If you find something missing, wrong or imprecise, please [help improving][edit] this document. Any form of contribution or feedback will be appreciated.
 
-For an up-to-date list and description of identified complications and how they are avoided in *zells*, please refer to the [manifesto].
+For an up-to-date list and descriptions of identified complications and how they are avoided in *zells*, please refer to the [manifesto].
 
 [manifesto]: https://github.com/zells/core/blob/master/manifesto.md
 [edit]: https://github.com/zells/core/edit/master/comparison.md
 
+
 ## Platforms
 
-This list contains a variety of software products and a set of protocols which I all consider to be *platforms*, since they allow users to create their own, new software.
+This list contains a variety of software products and protocols which I all consider to be *platforms*, since they allow users to create, run and share their own software.
 
-The categories are *protocols* for platforms that are defined by standards rather than an implementation, *operating systems* for everything which is located directly between user and hardware, *virtual machines* are things that could be considered programming languages and everything else is considered an *application*. 
+The categories are *protocols* for platforms that are defined by standards rather than an implementation, *operating systems* for everything which is located directly between user and hardware, *virtual machines* for things that could be called programming languages and everything else is considered an *application*. 
 
-The lines between the categories are somewhat fluent since it could be argued that some virtual machines behave like operating systems and some applications behave like virtual machines.
+The lines between these categories are fluent since it could be argued that some virtual machines behave like operating systems or have well defined protocols and some applications behave like virtual machines.
 
 
 ## Protocols
 
+While for many of the discussed platforms protocol-like specification are available, the WorldWideWeb is unique in it's wide-spreadedness and multitude of implementations. *zells* aims to belong to this category.
+
 ### WorldWideWeb
 
-For the purpose of this comparison, the WorldWideWeb consists of the specifications of HTTP, HTML and CSS and to a certain extend JavaScript. These are implemented by servers such as Apache and browsers such as Firefox. While HTML offers a straight-forward **syntax**, it is very limited and cannot be extended. And while any language can be used for server-side code, only JavaScript is practical on client side. But at least the **interactivity** when modifying client-side code is improving.
+For the purpose of this comparison, the WorldWideWeb is considered to consist of the specifications of HTTP, HTML and CSS and to a certain extend JavaScript. These are implemented by servers such as Apache and browsers such as Firefox.
 
-The web browser is only designed for accessing software, not manipulating then, which leads to a very high**segregation** between writing and using web application. While the latter only requires a web browser which is pre-installed on most systems and makes **sharing** applications very easy, the former requires a complicated **set-up** including web server, pre-processors, build tools, a server-side language and usually package managers to download third-party **dependencies**. 
+**Syntax**: The web server can be implemented using any language as long as it adheres to the HTTP specification. Code for structure (HTML) and presentation (CSS) is interpreted by the browser and therefore is very limited in terms of syntax and extensibility and in practise only JavaScript can be used to encode behaviour. For that reason a number of compilers and pre-processors is available which further complicates the development process.
 
-Instead of downloading them, third-party software can also be provided as web services. Besides complicated authentication, and very low **discoverability** because little semantic information, these services require the **serialization** of every single sent and received message.
+**Interactivity**: Server-side the level of interactivity depends on the chosen language but it's generally low due to the limited interface of the web browser. To my knowledge, Seaside offers the most interactive experience. Client-side interactivity depends mostly on the browser and is continuously improving but still very low.
 
-While invisioned as a distributed system that fosters **autonomy**, the WorldWideWeb turned out to favour centralization. **Security** is maintained by sandboxing web application as much as possible but web application are prone to many attacks such as session hijacking, cross-site scripting, phishing and many more.
+**Segregation**: The level of segregation between writing and using web software depends very much on the type of software. Very simple systems can almost entirely be written in the browser - although it's not originally designed to serve this purpose. 
+
+**Set-Up**: Sophisticated systems require a complex set-up, a dozen specialized tools and a complicated building and deployment process.
+
+**Sharing**: The omnipresence of web clients make sharing a web application very simple once an adequate web server is set-up. This is very easy for simple applications and extremely complicated for complex applications. Since most code is executed on the server side, complexity rises with the number of users.
+
+**Dependencies**: There are two kinds of dependencies of web applications: libraries and web-services. The management of the former is all but trivial as the large number of package managers illustrates. The complication of the latter depends on the service, but are usually subject to authentication and usage limitations.
+
+**Serialization**: Again depends on the server technology used. Most require a data serialization for persistence and HTTP forces all input and output to always be serialized including communication with web services. With good tools, most of this can be automated but usually not all.
+
+**Autonomy**: While envisioned as a distributed system that allows its users to collaborate and share their own software easily, the client-server model favours a high degree of centralization because of the high cost of running a server. For this reason, most web users do not create their own applications and even static content is distributed using centralized services like provided by Facebook, Twitter or Google.
+
+**Security**: Web browsers restrict web application from accessing most of the hosting system which increases security but also limits their capabilities. Yet web applications are prone to many attacks such as session hijacking, cross-site scripting, phishing and many more.
 
 ## Operating Systems
 
