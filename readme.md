@@ -2,7 +2,7 @@
 
 *zells* is a platform to create, modify, use and share any kind of software. The design goal of this platform is to systematically remove all incidental complications that make programming unnecessarily difficult.
 
-The mssion of *zells* is to enable software literacy bymaking writing writing software easy and fun, and accessible to everyone. 
+The mssion of *zells* is to enable software literacy by making writing software easy and fun, and accessible to everyone. 
 
 ## Documents
 
