@@ -4,7 +4,7 @@ Software is fundamentally broken. It's limited, never quite works the way we wan
 
 More and more, users are put into - sometimes golden - cages, and forced to hand over their ideas, personal information, and even identities to international quasi-monopolies that put everything into walled gardens which the creator can only access through tiny keyholes.
 
-To fix this, we need to increase the currently tiny number of people who are able to write, modify, combine and share software. We need a tool that makes writing software easy and fun. A tool that enables software literacy.
+To fix this, we need to increase the currently tiny number of people who are able to write, modify, combine and share software. We need a tool that makes writing software easy and fun, and accessible to everyone. A tool that enables software literacy.
 
 
 ## What's this about?
