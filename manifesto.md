@@ -31,7 +31,7 @@ The benefits of *understanding*, *learning*, *thinking*, *collaboration* and *em
 
 ## What prevents Software Literacy?
 
-Despite the many advantages of software literacy, learning how to write software is not an easy task nor is practising it a very pleasant one. One reason is certainly the current society and culture of programmers which is evidently uninviting for newcomers. But with a larger and more diverse community of software literates, this problem solves itself. Another, more fundamental reason is that solving complex problems is inherently complicated. But the fact that even the simplest problem is unproportionally difficult so solve with software nowadays, indicates that there must be unnecessary, incidental complications that make it harder than it needs to be.
+Despite the many advantages of software literacy, learning how to write software is not an easy task nor is practising it a very pleasant one. One reason is certainly the current society and culture of programmers which is evidently uninviting for newcomers. But with a larger and more diverse community of software literates, this problem solves itself. Another, more fundamental reason is that solving complex problems is inherently complicated. But the fact that even the simplest problem is unproportionally difficult to solve with software nowadays, indicates that there must be unnecessary, incidental complications that make it harder than it needs to be.
 
 A tool that enables software literacy must eliminate most if not all incidental complications. So what are they?
 
