@@ -66,7 +66,7 @@ The tool that eliminates all these incidental complications, is a global softwar
 
 **Distributed** - All cells exist in a single, globally shared hierarchy. It does not matter where a cell is physically located. It can be on your own computer or on any other in the network. It can seamlessly move between them and even be on multiple devices at once. 
 
-**Secure** - Every user can access any cell in this hierarchy, but only with the digitally signed permission of its owner. Therefore all user identities and permissions are secured by cryptographic algorithms and asymmetric keys.
+**Cryptographic** - Every user can access any cell in this hierarchy, but only with the digitally signed permission of its owner. Therefore all user identities and permissions are secured by cryptographic algorithms and asymmetric keys.
 
 **Persistent** - Any change to a cell is automatically saved, along with the entire history of all changes, including possibly alternative timelines.
 
