@@ -12,6 +12,25 @@
   </head>
   
   <body>
+	<h1>Comparison of existing platforms</h1>
+
+	<p>The goal of <em>zells</em> is to enable Software Literacy by providing a software platform without the incidental complications found in current platforms. The [manifesto] describes these complications in details, although in a rather abstract manner. The purpose of this document is to look at a selection of current platforms more closely and how certain complications materialize in them.</p>
+
+	<p>Restricted by my own knowledge, the list of platforms is all but complete and not every complication is discussed for every platform. If you find something missing, wrong or imprecise, please <a href="https://github.com/zells/core/edit/master/comparison.html">help improving this document</a>. Any form of contribution or feedback will be appreciated.</p>
+
+	<p>For an up-to-date list and descriptions of identified complications and how they are avoided in <em>zells</em>, please refer to the <a href="https://github.com/zells/core/blob/master/manifesto.md">manifesto</a>.</p>
+
+
+	<h2>Platforms</h2>
+
+	<p>This list contains a variety of software products and protocols which I all consider to be <em>platforms</em>, since they allow users to create, run and share their own software.</p>
+
+	<p>The categories are <em>protocols</em> for platforms that are defined by standards rather than an implementation, <em>operating systems</em> for everything which is located directly between user and hardware, <em>virtual machines</em> for things that could be called programming languages and everything else is considered an <em>application</em>.</p>
+
+	<p>The lines between these categories are fluent since it could be argued that some virtual machines behave like operating systems or have well defined protocols and some applications behave like virtual machines.</p>
+	
+	<h2>Comparison</h2>
+
     <table class="table table-bordered">
 		<tr>
 			<th></th>
@@ -31,23 +50,26 @@
 		</tr>
 		
 		<tr>
-			<th>Protocols</th>
+			<th>Protocols 
+			<span class="explained">While for many of the discussed platforms protocol-like specification are available, the WorldWideWeb is unique in it's wide-spreadedness and multitude of implementations. <em>zells</em> aims to belong to this category.</span></th>
 		</tr>
 		
 		<tr>
-			<td>WorldWideWeb</td>
+			<td>WorldWideWeb 
+			<span class="explained">For the purpose of this comparison, the WorldWideWeb is considered to consist of the specifications of HTTP, HTML and CSS and to a certain extend JavaScript. These are implemented by servers such as Apache and browsers such as Firefox.</span></td>
+			
+			<td class="danger explained">Sophisticated systems require a complex set-up, a dozen specialized tools and a complicated building and deployment process.</td>
+			<td class="success explained">The web server can be implemented using any language as long as it adheres to the HTTP specification. Code for structure (HTML) and presentation (CSS) is interpreted by the browser and therefore is very limited in terms of syntax and extensibility and in practise only JavaScript can be used to encode behaviour. For that reason a number of compilers and pre-processors is available which further complicates the development process.</td>
+			<td class="danger explained">Server-side the level of interactivity depends on the chosen language but it's generally low due to the limited interface of the web browser. To my knowledge, Seaside offers the most interactive experience. Client-side interactivity depends mostly on the browser and is continuously improving but still very low.</td>
 			<td class="danger"></td>
-			<td class="success"></td>
+			<td class="success explained">There are two kinds of dependencies of web applications: libraries and web-services. The management of the former is all but trivial as the large number of package managers illustrates. The complication of the latter depends on the service, but are usually subject to authentication and usage limitations.</td>
+			<td class="danger explained">Again depends on the server technology used. Most require a data serialization for persistence and HTTP forces all input and output to always be serialized including communication with web services. With good tools, most of this can be automated but usually not all.</td>
 			<td class="danger"></td>
 			<td class="danger"></td>
-			<td class="success"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="success"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="warning"></td>
+			<td class="success explained">The omnipresence of web clients make sharing a web application very simple once an adequate web server is set-up. This is very easy for simple applications and extremely complicated for complex applications. Since most code is executed on the server side, complexity rises with the number of users.</td>
+			<td class="danger explained">While envisioned as a distributed system that allows its users to collaborate and share their own software easily, the client-server model favours a high degree of centralization because of the high cost of running a server. For this reason, most web users do not create their own applications and even static content is distributed using centralized services like provided by Facebook, Twitter or Google.</td>
+			<td class="danger explained">Web browsers restrict web application from accessing most of the hosting system which increases security but also limits their capabilities. Yet web applications are prone to many attacks such as session hijacking, cross-site scripting, phishing and many more.</td>
+			<td class="warning explained"></td>
 		</tr>
 		
 		<tr>
@@ -56,6 +78,7 @@
 		
 		<tr>
 			<td>Linux</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -72,6 +95,7 @@
 		
 		<tr>
 			<td>Windows</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -88,6 +112,7 @@
 		
 		<tr>
 			<td>Macintosh</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -104,6 +129,7 @@
 		
 		<tr>
 			<td>iOS</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -120,6 +146,7 @@
 		
 		<tr>
 			<td>Android</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -140,6 +167,7 @@
 		
 		<tr>
 			<td>Python</td>
+			
 			<td class="danger"></td>
 			<td class="danger"></td>
 			<td class="danger"></td>
@@ -157,6 +185,7 @@
 		
 		<tr>
 			<td>JVM</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -173,6 +202,7 @@
 		
 		<tr>
 			<td>CLI</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -189,6 +219,7 @@
 		
 		<tr>
 			<td>Smalltalk</td>
+			
 			<td class="success"></td>
 			<td class="warning"></td>
 			<td class="success"></td>
@@ -205,6 +236,7 @@
 		
 		<tr>
 			<td>JavaScript</td>
+			
 			<td class="success"></td>
 			<td class="warning"></td>
 			<td class="danger"></td>
@@ -221,6 +253,7 @@
 		
 		<tr>
 			<td>unison</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -237,6 +270,7 @@
 		
 		<tr>
 			<td>LiveCode</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -257,6 +291,7 @@
 		
 		<tr>
 			<td>Flash</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -273,6 +308,7 @@
 		
 		<tr>
 			<td>Scratch</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -289,6 +325,7 @@
 		
 		<tr>
 			<td>Etoys</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -305,6 +342,7 @@
 		
 		<tr>
 			<td>Excel</td>
+			
 			<td class="warning"></td>
 			<td class="success"></td>
 			<td class="success"></td>
@@ -321,6 +359,7 @@
 		
 		<tr>
 			<td>Matlab</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -337,6 +376,7 @@
 		
 		<tr>
 			<td>Eve</td>
+			
 			<td class=""></td>
 			<td class=""></td>
 			<td class=""></td>
@@ -354,5 +394,21 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+	$(function () {
+	  $('span.explained').addClass('glyphicon glyphicon-info-sign');
+	  $('.explained').each(function () {
+		  $(this).data('content', $(this).html());
+		  $(this).html('');
+		  $(this).css('cursor', 'pointer');
+	  });
+	  $('.explained').popover({
+		  placement: "top",
+		  trigger: "hover",
+		  container: 'body',
+		  html: true
+	  });
+	})
+	</script>
   </body>
 </html>
