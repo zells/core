@@ -11,14 +11,19 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 	
 	<style>
+		th {
+			text-align: center;
+		}
 		td.explained {
 			text-align: center;
 			vertical-align: middle !important;
-			color: #AAA;
 		}
-		td.explained.success { color: #a6d294 }
-		td.explained.warning { color: #e6dcab }
-		td.explained.danger  { color: #e7b4b4 }
+		
+		                     .glyphicon { color: #666666; }
+		td.explained         .glyphicon { color: #cccccc; }
+		td.explained.success .glyphicon { color: #a6d294; }
+		td.explained.warning .glyphicon { color: #e6dcab; }
+		td.explained.danger  .glyphicon { color: #e7b4b4; }
 	</style>
   </head>
   
@@ -50,45 +55,34 @@
 		<tr>
 			<th></th>
 			
-			<th>Set-Up</th>
-			<th>Syntax</th>
-			<th>Interactivity</th>
-			<th>Discoverability</th>
-			<th>Dependencies</th>
-			<th>Serialization</th>
-			<th>Data Safety</th>
-			<th>Segregation</th>
-			<th>Sharing</th>
-			<th>Autonomy</th>
-			<th>Security</th>
-			<th>Universality</th>
+			<th>Set-Up
+			<span class="explained">Getting from zero to developing, knowledge assumed</span></th>
+			<th>Syntax
+			<span class="explained">Burden of learning a specific syntax</span></th>
+			<th>Interactivity
+			<span class="explained">Level of direct and immediate interaction with pieces of software</span></th>
+			<th>Discoverability
+			<span class="explained">Finding useful third-party services</span></th>
+			<th>Dependencies
+			<span class="explained">Using third-party services</span></th>
+			<th>Serialization
+			<span class="explained">Need for and ease of serialization</span></th>
+			<th>Data Safety
+			<span class="explained">Risk of losing software (program or data)</span></th>
+			<th>Segregation
+			<span class="explained">Difference between creating and using software</span></th>
+			<th>Sharing
+			<span class="explained">Giving access to your software to somebody else</span></th>
+			<th>Autonomy
+			<span class="explained">Dependencies on others</span></th>
+			<th>Security
+			<span class="explained">Protection of identity and information</span></th>
+			<th>Universality
+			<span class="explained">Range of problems that can be solved</span></th>
 		</tr>
 		
 		<tr>
-			<th>Protocols 
-			<span class="explained">While for many of the discussed platforms protocol-like specification are available, the WorldWideWeb is unique in it's wide-spreadedness and multitude of implementations. <em>zells</em> aims to belong to this category.</span></th>
-		</tr>
-		
-		<tr>
-			<td>WorldWideWeb 
-			<span class="explained">For the purpose of this comparison, the WorldWideWeb is considered to consist of the specifications of HTTP, HTML and CSS and to a certain extend JavaScript. These are implemented by servers such as Apache and browsers such as Firefox.</span></td>
-			
-			<td class="danger explained">Sophisticated systems require a complex set-up, a dozen specialized tools and a complicated building and deployment process.</td>
-			<td class="success explained">The web server can be implemented using any language as long as it adheres to the HTTP specification. Code for structure (HTML) and presentation (CSS) is interpreted by the browser and therefore is very limited in terms of syntax and extensibility and in practise only JavaScript can be used to encode behaviour. For that reason a number of compilers and pre-processors is available which further complicates the development process.</td>
-			<td class="danger explained">Server-side the level of interactivity depends on the chosen language but it's generally low due to the limited interface of the web browser. To my knowledge, Seaside offers the most interactive experience. Client-side interactivity depends mostly on the browser and is continuously improving but still very low.</td>
-			<td class="danger"></td>
-			<td class="success explained">There are two kinds of dependencies of web applications: libraries and web-services. The management of the former is all but trivial as the large number of package managers illustrates. The complication of the latter depends on the service, but are usually subject to authentication and usage limitations.</td>
-			<td class="danger explained">Again depends on the server technology used. Most require a data serialization for persistence and HTTP forces all input and output to always be serialized including communication with web services. With good tools, most of this can be automated but usually not all.</td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="success explained">The omnipresence of web clients make sharing a web application very simple once an adequate web server is set-up. This is very easy for simple applications and extremely complicated for complex applications. Since most code is executed on the server side, complexity rises with the number of users.</td>
-			<td class="danger explained">While envisioned as a distributed system that allows its users to collaborate and share their own software easily, the client-server model favours a high degree of centralization because of the high cost of running a server. For this reason, most web users do not create their own applications and even static content is distributed using centralized services like provided by Facebook, Twitter or Google.</td>
-			<td class="danger explained">Web browsers restrict web application from accessing most of the hosting system which increases security but also limits their capabilities. Yet web applications are prone to many attacks such as session hijacking, cross-site scripting, phishing and many more.</td>
-			<td class="warning explained"></td>
-		</tr>
-		
-		<tr>
-			<th>Virtual Machines</th>
+			<th colspan="13">Virtual Machines</th>
 		</tr>
 		
 		<tr>
@@ -118,7 +112,6 @@
 			<td class="warning"></td> 
 			<!-- Universality -->
 			<td class="success"></td> 
-		</tr>
 		</tr>
 		
 		<tr>
@@ -177,35 +170,6 @@
 			<td class=""></td>
 			<!-- Universality --> 
 			<td class=""></td>
-		</tr>
-		
-		<tr>
-			<td>Smalltalk</td>
-			
-			<!-- Set-Up --> 
-			<td class="success explained">Download and install</td>
-			<!-- Syntax -->
-			<td class="warning explained">Single language</td>
-			<!-- Interactivity --> 
-			<td class="success explained">Very good with awesome debugging</td>
-			<!-- Discoverability --> 
-			<td class="success explained">Quite good with search and examples</td>
-			<!-- Dependencies --> 
-			<td class="danger"></td>
-			<!-- Serialization --> 
-			<td class="success explained">Probably not needed withing one image</td>
-			<!-- Data Safety --> 
-			<td class="warning explained">The image must live</td>
-			<!-- Segregation --> 
-			<td class="success explained">Way less, both happens in the same environment</td> 
-			<!-- Sharing --> 
-			<td class="warning explained">Tricky with out-filing and VCS</td>
-			<!-- Autonomy --> 
-			<td class="sucecss explained">open-source all the things</td>
-			<!-- Security --> 
-			<td class="warning"></td>
-			<!-- Universality --> 
-			<td class="success"></td>
 		</tr>
 		
 		<tr>
@@ -296,7 +260,36 @@
 		</tr>
 		
 		<tr>
-			<th>Applications</th>
+			<td>Smalltalk</td>
+			
+			<!-- Set-Up --> 
+			<td class="success explained">Download and install</td>
+			<!-- Syntax -->
+			<td class="warning explained">Single language</td>
+			<!-- Interactivity --> 
+			<td class="success explained">Very good with awesome debugging</td>
+			<!-- Discoverability --> 
+			<td class="success explained">Quite good with search and examples</td>
+			<!-- Dependencies --> 
+			<td class="danger"></td>
+			<!-- Serialization --> 
+			<td class="success explained">Probably not needed withing one image</td>
+			<!-- Data Safety --> 
+			<td class="warning explained">The image must live</td>
+			<!-- Segregation --> 
+			<td class="success explained">Way less, both happens in the same environment</td> 
+			<!-- Sharing --> 
+			<td class="warning explained">Tricky with out-filing and VCS</td>
+			<!-- Autonomy --> 
+			<td class="sucecss explained">open-source all the things</td>
+			<!-- Security --> 
+			<td class="warning"></td>
+			<!-- Universality --> 
+			<td class="success"></td>
+		</tr>
+		
+		<tr>
+			<th colspan="13">Applications</th>
 		</tr>
 		
 		<tr>
@@ -474,7 +467,7 @@
 		</tr>
 		
 		<tr>
-			<th>Operating Systems</th>
+			<th colspan="13">Operating Systems</th>
 		</tr>
 		
 		<tr>
@@ -620,6 +613,29 @@
 			<td class="explained">Permission-based, better since more fine-grained</td>
 			<!-- Universality --> 
 			<td class=""></td>
+		</tr>
+		
+		<tr>
+			<th colspan="13">Protocols 
+			<span class="explained">While for many of the discussed platforms protocol-like specification are available, the WorldWideWeb is unique in it's wide-spreadedness and multitude of implementations. <em>zells</em> aims to belong to this category.</span></th>
+		</tr>
+		
+		<tr>
+			<td>WWW 
+			<span class="explained">For the purpose of this comparison, the WorldWideWeb is considered to consist of the specifications of HTTP, HTML and CSS and to a certain extend JavaScript. These are implemented by servers such as Apache and browsers such as Firefox.</span></td>
+			
+			<td class="danger explained">Sophisticated systems require a complex set-up, a dozen specialized tools and a complicated building and deployment process.</td>
+			<td class="success explained">The web server can be implemented using any language as long as it adheres to the HTTP specification. Code for structure (HTML) and presentation (CSS) is interpreted by the browser and therefore is very limited in terms of syntax and extensibility and in practise only JavaScript can be used to encode behaviour. For that reason a number of compilers and pre-processors is available which further complicates the development process.</td>
+			<td class="danger explained">Server-side the level of interactivity depends on the chosen language but it's generally low due to the limited interface of the web browser. To my knowledge, Seaside offers the most interactive experience. Client-side interactivity depends mostly on the browser and is continuously improving but still very low.</td>
+			<td class="danger"></td>
+			<td class="success explained">There are two kinds of dependencies of web applications: libraries and web-services. The management of the former is all but trivial as the large number of package managers illustrates. The complication of the latter depends on the service, but are usually subject to authentication and usage limitations.</td>
+			<td class="danger explained">Again depends on the server technology used. Most require a data serialization for persistence and HTTP forces all input and output to always be serialized including communication with web services. With good tools, most of this can be automated but usually not all.</td>
+			<td class="danger"></td>
+			<td class="danger"></td>
+			<td class="success explained">The omnipresence of web clients make sharing a web application very simple once an adequate web server is set-up. This is very easy for simple applications and extremely complicated for complex applications. Since most code is executed on the server side, complexity rises with the number of users.</td>
+			<td class="danger explained">While envisioned as a distributed system that allows its users to collaborate and share their own software easily, the client-server model favours a high degree of centralization because of the high cost of running a server. For this reason, most web users do not create their own applications and even static content is distributed using centralized services like provided by Facebook, Twitter or Google.</td>
+			<td class="danger explained">Web browsers restrict web application from accessing most of the hosting system which increases security but also limits their capabilities. Yet web applications are prone to many attacks such as session hijacking, cross-site scripting, phishing and many more.</td>
+			<td class="warning explained"></td>
 		</tr>
 	</table>
 	</div>
