@@ -9,9 +9,22 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	
+	<style>
+		td.explained {
+			text-align: center;
+			vertical-align: middle !important;
+			color: #AAA;
+		}
+		td.explained.success { color: #a6d294 }
+		td.explained.warning { color: #e6dcab }
+		td.explained.danger  { color: #e7b4b4 }
+	</style>
   </head>
   
   <body>
+  <div class="container">
+		  
 	<h1>Comparison of existing platforms</h1>
 
 	<p>The goal of <em>zells</em> is to enable Software Literacy by providing a software platform without the incidental complications found in current platforms. The [manifesto] describes these complications in details, although in a rather abstract manner. The purpose of this document is to look at a selection of current platforms more closely and how certain complications materialize in them.</p>
@@ -29,9 +42,11 @@
 
 	<p>The lines between these categories are fluent since it could be argued that some virtual machines behave like operating systems or have well defined protocols and some applications behave like virtual machines.</p>
 	
-	<h2>Comparison</h2>
-
-    <table class="table table-bordered">
+	
+	<h2>Complications</h2>
+	
+    <div class="table-responsive">
+    <table class="table table-bordered table-hover table-condensed">
 		<tr>
 			<th></th>
 			
@@ -73,215 +88,210 @@
 		</tr>
 		
 		<tr>
-			<th>Operating Systems</th>
-		</tr>
-		
-		<tr>
-			<td>Linux</td>
-			
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-		</tr>
-		
-		<tr>
-			<td>Windows</td>
-			
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-		</tr>
-		
-		<tr>
-			<td>Macintosh</td>
-			
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-		</tr>
-		
-		<tr>
-			<td>iOS</td>
-			
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-		</tr>
-		
-		<tr>
-			<td>Android</td>
-			
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-		</tr>
-		
-		<tr>
 			<th>Virtual Machines</th>
 		</tr>
 		
 		<tr>
 			<td>Python</td>
 			
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="warning"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="success"></td>
-			<td class="warning"></td>
-			<td class="success"></td>
+			<!-- Set-Up -->
+			<td class="danger"></td> 
+			<!-- Syntax -->
+			<td class="danger"></td> 
+			<!-- Interactivity -->
+			<td class="danger"></td> 
+			<!-- Discoverability -->
+			<td class="danger"></td> 
+			<!-- Dependencies -->
+			<td class="danger"></td> 
+			<!-- Serialization -->
+			<td class="warning"></td> 
+			<!-- Data Safety -->
+			<td class="danger"></td> 
+			<!-- Segregation -->
+			<td class="danger"></td> 
+			<!-- Sharing -->
+			<td class="danger"></td> 
+			<!-- Autonomy -->
+			<td class="success"></td> 
+			<!-- Security -->
+			<td class="warning"></td> 
+			<!-- Universality -->
+			<td class="success"></td> 
 		</tr>
 		</tr>
 		
 		<tr>
 			<td>JVM</td>
 			
+			<!-- Set-Up --> 
+			<td class="explained">Not too bad</td>
+			<!-- Syntax -->
+			<td class="explained">Mostly Java, some others</td>
+			<!-- Interactivity --> 
+			<td class="explained">Debugger</td>
+			<!-- Discoverability --> 
+			<td class="explained">Depends on the IDE</td>
+			<!-- Dependencies --> 
+			<td class="explained">Complicated build systems</td>
+			<!-- Serialization --> 
+			<td class="explained">The worst</td>
+			<!-- Data Safety --> 
+			<td class="explained">VCS kinda mandatory</td>
+			<!-- Segregation --> 
+			<td class=""></td> 
+			<!-- Sharing --> 
+			<td class="explained">Easy because very wide-spread</td>
+			<!-- Autonomy --> 
+			<td class="explained">Owned by Oracle</td>
+			<!-- Security --> 
 			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 		
 		<tr>
 			<td>CLI</td>
 			
+			<!-- Set-Up --> 
 			<td class=""></td>
+			<!-- Syntax -->
 			<td class=""></td>
+			<!-- Interactivity --> 
 			<td class=""></td>
+			<!-- Discoverability --> 
 			<td class=""></td>
+			<!-- Dependencies --> 
 			<td class=""></td>
+			<!-- Serialization --> 
 			<td class=""></td>
+			<!-- Data Safety --> 
 			<td class=""></td>
+			<!-- Segregation --> 
+			<td class=""></td> 
+			<!-- Sharing --> 
 			<td class=""></td>
+			<!-- Autonomy --> 
 			<td class=""></td>
+			<!-- Security --> 
 			<td class=""></td>
-			<td class=""></td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 		
 		<tr>
 			<td>Smalltalk</td>
 			
-			<td class="success"></td>
-			<td class="warning"></td>
-			<td class="success"></td>
-			<td class="success"></td>
+			<!-- Set-Up --> 
+			<td class="success explained">Download and install</td>
+			<!-- Syntax -->
+			<td class="warning explained">Single language</td>
+			<!-- Interactivity --> 
+			<td class="success explained">Very good with awesome debugging</td>
+			<!-- Discoverability --> 
+			<td class="success explained">Quite good with search and examples</td>
+			<!-- Dependencies --> 
 			<td class="danger"></td>
-			<td class="success"></td>
+			<!-- Serialization --> 
+			<td class="success explained">Probably not needed withing one image</td>
+			<!-- Data Safety --> 
+			<td class="warning explained">The image must live</td>
+			<!-- Segregation --> 
+			<td class="success explained">Way less, both happens in the same environment</td> 
+			<!-- Sharing --> 
+			<td class="warning explained">Tricky with out-filing and VCS</td>
+			<!-- Autonomy --> 
+			<td class="sucecss explained">open-source all the things</td>
+			<!-- Security --> 
 			<td class="warning"></td>
-			<td class="success"></td>
-			<td class="warning"></td>
-			<td class="success"></td>
-			<td class="warning"></td>
+			<!-- Universality --> 
 			<td class="success"></td>
 		</tr>
 		
 		<tr>
 			<td>JavaScript</td>
 			
+			<!-- Set-Up --> 
+			<td class="success explained">Runs in the browser</td>
+			<!-- Syntax -->
+			<td class="warning"></td>
+			<!-- Interactivity --> 
+			<td class="danger explained">Depends on browser</td>
+			<!-- Discoverability --> 
+			<td class="danger"></td>
+			<!-- Dependencies --> 
+			<td class="warning explained">so many package managers</td>
+			<!-- Serialization --> 
+			<td class="warning explained">JSON</td>
+			<!-- Data Safety --> 
+			<td class="danger"></td>
+			<!-- Segregation --> 
+			<td class="warning explained">REPL</td> 
+			<!-- Sharing --> 
+			<td class="warning explained">Easy through web</td>
+			<!-- Autonomy --> 
 			<td class="success"></td>
-			<td class="warning"></td>
-			<td class="danger"></td>
-			<td class="danger"></td>
-			<td class="warning"></td>
-			<td class="warning"></td>
-			<td class="danger"></td>
-			<td class="warning"></td>
-			<td class="warning"></td>
-			<td class="success"></td>
-			<td class="warning"></td>
+			<!-- Security --> 
+			<td class="warning explained">Totally sand-boxed inside browser</td>
+			<!-- Universality --> 
 			<td class="warning"></td>
 		</tr>
 		
 		<tr>
 			<td>unison</td>
 			
+			<!-- Set-Up --> 
 			<td class=""></td>
+			<!-- Syntax -->
+			<td class="explained">Only functional</td>
+			<!-- Interactivity --> 
+			<td class="explained">High because direct manipulation I think</td>
+			<!-- Discoverability --> 
 			<td class=""></td>
+			<!-- Dependencies --> 
 			<td class=""></td>
+			<!-- Serialization --> 
+			<td class="explained">Not necessary within platform</td>
+			<!-- Data Safety --> 
 			<td class=""></td>
+			<!-- Segregation --> 
+			<td class=""></td> 
+			<!-- Sharing --> 
+			<td class="explained">Should be easy because programs can be run remotely</td>
+			<!-- Autonomy --> 
+			<td class="explained">Also good because easy distribution</td>
+			<!-- Security --> 
 			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 		
 		<tr>
 			<td>LiveCode</td>
 			
+			<!-- Set-Up --> 
 			<td class=""></td>
+			<!-- Syntax -->
+			<td class="explained">Very intersting</td>
+			<!-- Interactivity --> 
+			<td class="explained">Higher than alternatives</td>
+			<!-- Discoverability --> 
 			<td class=""></td>
+			<!-- Dependencies --> 
 			<td class=""></td>
+			<!-- Serialization --> 
 			<td class=""></td>
+			<!-- Data Safety --> 
 			<td class=""></td>
+			<!-- Segregation --> 
+			<td class=""></td> 
+			<!-- Sharing --> 
 			<td class=""></td>
+			<!-- Autonomy --> 
 			<td class=""></td>
+			<!-- Security --> 
 			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 		
@@ -292,114 +302,337 @@
 		<tr>
 			<td>Flash</td>
 			
+			<!-- Set-Up --> 
+			<td class="explained">Used to be everywhere, now getting worse</td>
+			<!-- Syntax -->
 			<td class=""></td>
+			<!-- Interactivity --> 
+			<td class="explained">Quite good</td>
+			<!-- Discoverability --> 
 			<td class=""></td>
+			<!-- Dependencies --> 
 			<td class=""></td>
+			<!-- Serialization --> 
+			<td class="explained">For getting anything in or out</td>
+			<!-- Data Safety --> 
 			<td class=""></td>
+			<!-- Segregation --> 
+			<td class=""></td> 
+			<!-- Sharing --> 
+			<td class="explained">Used to be very easy through web</td>
+			<!-- Autonomy --> 
+			<td class="explained">Owned by Adobe</td>
+			<!-- Security --> 
 			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 		
 		<tr>
 			<td>Scratch</td>
 			
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
-			<td class=""></td>
+			<!-- Set-Up --> 
+			<td class="explained">None</td>
+			<!-- Syntax -->
+			<td class="explained">Graphical</td>
+			<!-- Interactivity --> 
+			<td class="explained"> Very good but could be better</td>
+			<!-- Discoverability --> 
+			<td class="explained">Not so good I think</td>
+			<!-- Dependencies --> 
+			<td class="explained">Even possible?</td>
+			<!-- Serialization --> 
+			<td class="explained">Necessary</td>
+			<!-- Data Safety --> 
+			<td class="explained">It's on the cloud</td>
+			<!-- Segregation --> 
+			<td class="explained">Very little</td> 
+			<!-- Sharing --> 
+			<td class="explained">Very easy</td>
+			<!-- Autonomy --> 
+			<td class="explained">Complete dependency</td>
+			<!-- Security --> 
+			<td class="explained">Completely sand-boxed</td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 		
 		<tr>
 			<td>Etoys</td>
 			
+			<!-- Set-Up --> 
 			<td class=""></td>
+			<!-- Syntax -->
 			<td class=""></td>
+			<!-- Interactivity --> 
 			<td class=""></td>
+			<!-- Discoverability --> 
 			<td class=""></td>
+			<!-- Dependencies --> 
 			<td class=""></td>
+			<!-- Serialization --> 
 			<td class=""></td>
+			<!-- Data Safety --> 
 			<td class=""></td>
+			<!-- Segregation --> 
+			<td class=""></td> 
+			<!-- Sharing --> 
 			<td class=""></td>
+			<!-- Autonomy --> 
 			<td class=""></td>
+			<!-- Security --> 
 			<td class=""></td>
-			<td class=""></td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 		
 		<tr>
 			<td>Excel</td>
 			
+			<!-- Set-Up --> 
 			<td class="warning"></td>
+			<!-- Syntax -->
 			<td class="success"></td>
+			<!-- Interactivity --> 
 			<td class="success"></td>
+			<!-- Discoverability --> 
 			<td class="warning"></td>
+			<!-- Dependencies --> 
 			<td class="danger"></td>
+			<!-- Serialization --> 
 			<td class="warning"></td>
+			<!-- Data Safety --> 
 			<td class="danger"></td>
-			<td class="success"></td>
+			<!-- Segregation --> 
+			<td class="success"></td> 
+			<!-- Sharing --> 
 			<td class="warning"></td>
+			<!-- Autonomy --> 
 			<td class="warning"></td>
+			<!-- Security --> 
 			<td class="warning"></td>
+			<!-- Universality --> 
 			<td class="danger"></td>
 		</tr>
 		
 		<tr>
 			<td>Matlab</td>
 			
+			<!-- Set-Up --> 
 			<td class=""></td>
+			<!-- Syntax -->
 			<td class=""></td>
+			<!-- Interactivity --> 
 			<td class=""></td>
+			<!-- Discoverability --> 
 			<td class=""></td>
+			<!-- Dependencies --> 
 			<td class=""></td>
+			<!-- Serialization --> 
 			<td class=""></td>
+			<!-- Data Safety --> 
 			<td class=""></td>
+			<!-- Segregation --> 
+			<td class=""></td> 
+			<!-- Sharing --> 
 			<td class=""></td>
+			<!-- Autonomy --> 
 			<td class=""></td>
+			<!-- Security --> 
 			<td class=""></td>
-			<td class=""></td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 		
 		<tr>
 			<td>Eve</td>
 			
+			<!-- Set-Up --> 
 			<td class=""></td>
+			<!-- Syntax -->
 			<td class=""></td>
+			<!-- Interactivity --> 
 			<td class=""></td>
+			<!-- Discoverability --> 
 			<td class=""></td>
+			<!-- Dependencies --> 
 			<td class=""></td>
+			<!-- Serialization --> 
 			<td class=""></td>
+			<!-- Data Safety --> 
 			<td class=""></td>
+			<!-- Segregation --> 
+			<td class=""></td> 
+			<!-- Sharing --> 
 			<td class=""></td>
+			<!-- Autonomy --> 
 			<td class=""></td>
+			<!-- Security --> 
 			<td class=""></td>
+			<!-- Universality --> 
 			<td class=""></td>
+		</tr>
+		
+		<tr>
+			<th>Operating Systems</th>
+		</tr>
+		
+		<tr>
+			<td>Linux</td>
+			
+			<!-- Set-Up --> 
+			<td class="explained">Installation is quite easy now, can be run from a USB stick</td>
+			<!-- Syntax -->
+			<td class="explained">Multiple languages possible, strong lock-in though, unfamiliar to most people, CLI is terrible</td>
+			<!-- Interactivity --> 
+			<td class=""></td>
+			<!-- Discoverability --> 
+			<td class="explained">man pages and built-in help</td>
+			<!-- Dependencies --> 
+			<td class=""></td>
+			<!-- Serialization --> 
+			<td class="explained">piping is almost nice but the pipes are so tiny</td>
+			<!-- Data Safety --> 
+			<td class="explained">don't shoot yourself in the foot</td>
+			<!-- Segregation --> 
+			<td class="explained">Programs are written in an editor and run either in the terminal or with a GUI.</td> 
+			<!-- Sharing --> 
+			<td class="explained">package managers, distributions, compile your own</td>
+			<!-- Autonomy --> 
+			<td class="explained">it's free and most things are free</td>
+			<!-- Security --> 
+			<td class="explained">good user-based security, lots of things need system-wide access though</td>
+			<!-- Universality --> 
+			<td class=""></td>
+		</tr>
+		
+		<tr>
+			<td>Windows</td>
+			
+			<!-- Set-Up --> 
+			<td class="explained">pre-installed on most costumer PCs, easy to install</td>
+			<!-- Syntax -->
+			<td class="explained">languages, GUIs</td>
+			<!-- Interactivity --> 
+			<td class=""></td>
+			<!-- Discoverability --> 
+			<td class="explained">Pretty bad since everything in menus</td>
+			<!-- Dependencies --> 
+			<td class=""></td>
+			<!-- Serialization --> 
+			<td class=""></td>
+			<!-- Data Safety --> 
+			<td class="explained">Better make those back-ups</td>
+			<!-- Segregation --> 
+			<td class="explained">programs usually have GUIs</td> 
+			<!-- Sharing --> 
+			<td class="explained">Easier because of market domination</td>
+			<!-- Autonomy --> 
+			<td class="explained">Pretty bad because controlled by Microsoft</td>
+			<!-- Security --> 
+			<td class="explained">Slowly improving but still pretty terrible</td>
+			<!-- Universality --> 
+			<td class=""></td>
+		</tr>
+		
+		<tr>
+			<td>Macintosh</td>
+			
+			<!-- Set-Up --> 
+			<td class="explained">pre-installed on Apple computers</td>
+			<!-- Syntax -->
+			<td class="explained">Consistent GUIs</td>
+			<!-- Interactivity --> 
+			<td class=""></td>
+			<!-- Discoverability --> 
+			<td class="explained">Menus</td>
+			<!-- Dependencies --> 
+			<td class=""></td>
+			<!-- Serialization --> 
+			<td class=""></td>
+			<!-- Data Safety --> 
+			<td class="explained">At least time machine is built-in</td>
+			<!-- Segregation --> 
+			<td class="explained">always GUIs</td> 
+			<!-- Sharing --> 
+			<td class="explained">Good among fellow mac users, gotta make sure it runs in the new version</td>
+			<!-- Autonomy --> 
+			<td class="explained">Not too bad but Apple is trying to make it worse</td>
+			<!-- Security --> 
+			<td class="explained">Linux-based</td>
+			<!-- Universality --> 
+			<td class=""></td>
+		</tr>
+		
+		<tr>
+			<td>iOS</td>
+			
+			<!-- Set-Up --> 
+			<td class="explained">Zero for running, by now pretty easy for creation</td>
+			<!-- Syntax -->
+			<td class="explained">Limited languages available</td>
+			<!-- Interactivity --> 
+			<td class="explained">Terrible, simulator</td>
+			<!-- Discoverability --> 
+			<td class=""></td>
+			<!-- Dependencies --> 
+			<td class=""></td>
+			<!-- Serialization --> 
+			<td class=""></td>
+			<!-- Data Safety --> 
+			<td class="explained">It's all in the cloud</td>
+			<!-- Segregation --> 
+			<td class="explained">Development happens on a different plattform</td> 
+			<!-- Sharing --> 
+			<td class="explained">Easy through market</td>
+			<!-- Autonomy --> 
+			<td class="explained">Terrible, high fees and tightly controlled market</td>
+			<!-- Security --> 
+			<td class=""></td>
+			<!-- Universality --> 
+			<td class=""></td>
+		</tr>
+		
+		<tr>
+			<td>Android</td>
+			
+			<!-- Set-Up --> 
+			<td class="explained">Pretty straight forward by now</td>
+			<!-- Syntax -->
+			<td class="explained">Still only Java?</td>
+			<!-- Interactivity --> 
+			<td class="explained">Terrible, simluator</td>
+			<!-- Discoverability --> 
+			<td class=""></td>
+			<!-- Dependencies --> 
+			<td class=""></td>
+			<!-- Serialization --> 
+			<td class=""></td>
+			<!-- Data Safety --> 
+			<td class="explained">To the clouds, but harder since less integrated/mandatory than iOS</td>
+			<!-- Segregation --> 
+			<td class="explained">Cross-platform</td> 
+			<!-- Sharing --> 
+			<td class="explained">Easy through market</td>
+			<!-- Autonomy --> 
+			<td class="explained">Better than iOS but still pretty bad</td>
+			<!-- Security --> 
+			<td class="explained">Permission-based, better since more fine-grained</td>
+			<!-- Universality --> 
 			<td class=""></td>
 		</tr>
 	</table>
+	</div>
+	
+	</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script>
 	$(function () {
-	  $('span.explained').addClass('glyphicon glyphicon-info-sign');
 	  $('.explained').each(function () {
 		  $(this).data('content', $(this).html());
-		  $(this).html('');
+		  $(this).html('<span class="glyphicon glyphicon-info-sign"></span>');
 		  $(this).css('cursor', 'pointer');
 	  });
 	  $('.explained').popover({
