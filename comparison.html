@@ -21,6 +21,7 @@
 		
 		                     .glyphicon { color: #666666; }
 		td.explained         .glyphicon { color: #cccccc; }
+		td.explained.info    .glyphicon { color: #a7ccde; }
 		td.explained.success .glyphicon { color: #a6d294; }
 		td.explained.warning .glyphicon { color: #e6dcab; }
 		td.explained.danger  .glyphicon { color: #e7b4b4; }
@@ -86,7 +87,7 @@
 		</tr>
 		
 		<tr>
-			<td>Python</td>
+			<td><a href="https://www.python.org/" target="_blank">Python</a></td>
 			
 			<!-- Set-Up -->
 			<td class="danger"></td> 
@@ -115,65 +116,36 @@
 		</tr>
 		
 		<tr>
-			<td>JVM</td>
+			<td><a href="https://www.java.com" target="_blank">JVM</a></td>
 			
 			<!-- Set-Up --> 
-			<td class="explained">Not too bad</td>
+			<td class="success explained">Not too bad</td>
 			<!-- Syntax -->
-			<td class="explained">Mostly Java, some others</td>
+			<td class="success explained">Mostly Java, some others</td>
 			<!-- Interactivity --> 
-			<td class="explained">Debugger</td>
+			<td class="warning explained">Debugger</td>
 			<!-- Discoverability --> 
-			<td class="explained">Depends on the IDE</td>
+			<td class="warning explained">Depends on the IDE</td>
 			<!-- Dependencies --> 
-			<td class="explained">Complicated build systems</td>
+			<td class="danger explained">Complicated build systems</td>
 			<!-- Serialization --> 
-			<td class="explained">The worst</td>
+			<td class="danger explained">The worst</td>
 			<!-- Data Safety --> 
-			<td class="explained">VCS kinda mandatory</td>
+			<td class="warning explained">VCS kinda mandatory</td>
 			<!-- Segregation --> 
-			<td class=""></td> 
+			<td class="danger"></td> 
 			<!-- Sharing --> 
-			<td class="explained">Easy because very wide-spread</td>
+			<td class="warning explained">Easy because very wide-spread</td>
 			<!-- Autonomy --> 
-			<td class="explained">Owned by Oracle</td>
+			<td class="warning explained">Owned by Oracle</td>
 			<!-- Security --> 
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Universality --> 
-			<td class=""></td>
+			<td class="success"></td>
 		</tr>
 		
 		<tr>
-			<td>CLI</td>
-			
-			<!-- Set-Up --> 
-			<td class=""></td>
-			<!-- Syntax -->
-			<td class=""></td>
-			<!-- Interactivity --> 
-			<td class=""></td>
-			<!-- Discoverability --> 
-			<td class=""></td>
-			<!-- Dependencies --> 
-			<td class=""></td>
-			<!-- Serialization --> 
-			<td class=""></td>
-			<!-- Data Safety --> 
-			<td class=""></td>
-			<!-- Segregation --> 
-			<td class=""></td> 
-			<!-- Sharing --> 
-			<td class=""></td>
-			<!-- Autonomy --> 
-			<td class=""></td>
-			<!-- Security --> 
-			<td class=""></td>
-			<!-- Universality --> 
-			<td class=""></td>
-		</tr>
-		
-		<tr>
-			<td>JavaScript</td>
+			<td><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></td>
 			
 			<!-- Set-Up --> 
 			<td class="success explained">Runs in the browser</td>
@@ -202,24 +174,24 @@
 		</tr>
 		
 		<tr>
-			<td>unison</td>
+			<td><a href="http://unisonweb.org/" target="_blank">unison</a></td>
 			
 			<!-- Set-Up --> 
 			<td class=""></td>
 			<!-- Syntax -->
-			<td class="explained">Only functional</td>
+			<td class="danger explained">Only functional</td>
 			<!-- Interactivity --> 
-			<td class="explained">High because direct manipulation I think</td>
+			<td class="success explained">High because direct manipulation I think</td>
 			<!-- Discoverability --> 
 			<td class=""></td>
 			<!-- Dependencies --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Serialization --> 
-			<td class="explained">Not necessary within platform</td>
+			<td class="success explained">Not necessary within platform</td>
 			<!-- Data Safety --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Segregation --> 
-			<td class=""></td> 
+			<td class="success"></td> 
 			<!-- Sharing --> 
 			<td class="explained">Should be easy because programs can be run remotely</td>
 			<!-- Autonomy --> 
@@ -231,14 +203,14 @@
 		</tr>
 		
 		<tr>
-			<td>LiveCode</td>
+			<td><a href="https://livecode.com/" target="_blank">LiveCode</a></td>
 			
 			<!-- Set-Up --> 
 			<td class=""></td>
 			<!-- Syntax -->
-			<td class="explained">Very intersting</td>
+			<td class="warning explained">Very intersting</td>
 			<!-- Interactivity --> 
-			<td class="explained">Higher than alternatives</td>
+			<td class="warning explained">Higher than alternatives</td>
 			<!-- Discoverability --> 
 			<td class=""></td>
 			<!-- Dependencies --> 
@@ -260,12 +232,12 @@
 		</tr>
 		
 		<tr>
-			<td>Smalltalk</td>
+			<td><a href="http://pharo.org/" target="_blank">Smalltalk</a></td>
 			
 			<!-- Set-Up --> 
 			<td class="success explained">Download and install</td>
 			<!-- Syntax -->
-			<td class="warning explained">Single language</td>
+			<td class="danger explained">Single language</td>
 			<!-- Interactivity --> 
 			<td class="success explained">Very good with awesome debugging</td>
 			<!-- Discoverability --> 
@@ -293,99 +265,99 @@
 		</tr>
 		
 		<tr>
-			<td>Flash</td>
+			<td><a href="http://www.adobe.com/products/flash-builder.html" target="_blank">Flash</a></td>
 			
 			<!-- Set-Up --> 
-			<td class="explained">Used to be everywhere, now getting worse</td>
+			<td class="success explained">Used to be everywhere, now getting worse</td>
 			<!-- Syntax -->
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Interactivity --> 
-			<td class="explained">Quite good</td>
+			<td class="success explained">Quite good</td>
 			<!-- Discoverability --> 
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Dependencies --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Serialization --> 
-			<td class="explained">For getting anything in or out</td>
+			<td class="danger explained">For getting anything in or out</td>
 			<!-- Data Safety --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Segregation --> 
-			<td class=""></td> 
+			<td class="danger"></td> 
 			<!-- Sharing --> 
-			<td class="explained">Used to be very easy through web</td>
+			<td class="warning explained">Used to be very easy through web</td>
 			<!-- Autonomy --> 
-			<td class="explained">Owned by Adobe</td>
+			<td class="danger explained">Owned by Adobe</td>
 			<!-- Security --> 
 			<td class=""></td>
 			<!-- Universality --> 
-			<td class=""></td>
+			<td class="warning"></td>
 		</tr>
 		
 		<tr>
-			<td>Scratch</td>
+			<td><a href="https://scratch.mit.edu/" target="_blank">Scratch</a></td>
 			
 			<!-- Set-Up --> 
-			<td class="explained">None</td>
+			<td class="success explained">None</td>
 			<!-- Syntax -->
-			<td class="explained">Graphical</td>
+			<td class="warning explained">Graphical</td>
 			<!-- Interactivity --> 
-			<td class="explained"> Very good but could be better</td>
+			<td class="success explained"> Very good but could be better</td>
 			<!-- Discoverability --> 
-			<td class="explained">Not so good I think</td>
+			<td class="danger explained">Not so good I think</td>
 			<!-- Dependencies --> 
-			<td class="explained">Even possible?</td>
+			<td class="danger explained">Even possible?</td>
 			<!-- Serialization --> 
-			<td class="explained">Necessary</td>
+			<td class="warning explained">Necessary</td>
 			<!-- Data Safety --> 
-			<td class="explained">It's on the cloud</td>
+			<td class="success explained">It's on the cloud</td>
 			<!-- Segregation --> 
-			<td class="explained">Very little</td> 
+			<td class="success explained">Very little</td> 
 			<!-- Sharing --> 
-			<td class="explained">Very easy</td>
+			<td class="success explained">Very easy</td>
 			<!-- Autonomy --> 
-			<td class="explained">Complete dependency</td>
+			<td class="danger explained">Complete dependency</td>
 			<!-- Security --> 
 			<td class="explained">Completely sand-boxed</td>
 			<!-- Universality --> 
-			<td class=""></td>
+			<td class="danger"></td>
 		</tr>
 		
 		<tr>
-			<td>Etoys</td>
+			<td><a href="http://www.squeakland.org/" target="_blank">Etoys</a></td>
 			
 			<!-- Set-Up --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Syntax -->
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Interactivity --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Discoverability --> 
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Dependencies --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Serialization --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Data Safety --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Segregation --> 
-			<td class=""></td> 
+			<td class="success"></td> 
 			<!-- Sharing --> 
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Autonomy --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Security --> 
 			<td class=""></td>
 			<!-- Universality --> 
-			<td class=""></td>
+			<td class="warning"></td>
 		</tr>
 		
 		<tr>
-			<td>Excel</td>
+			<td><a href="https://products.office.com/excel" target="_blank">Excel</a></td>
 			
 			<!-- Set-Up --> 
 			<td class="warning"></td>
 			<!-- Syntax -->
-			<td class="success"></td>
+			<td class="danger"></td>
 			<!-- Interactivity --> 
 			<td class="success"></td>
 			<!-- Discoverability --> 
@@ -409,43 +381,43 @@
 		</tr>
 		
 		<tr>
-			<td>Matlab</td>
+			<td><a href="http://mathworks.com" target="_blank">Matlab</a></td>
 			
 			<!-- Set-Up --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Syntax -->
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Interactivity --> 
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Discoverability --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Dependencies --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Serialization --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Data Safety --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Segregation --> 
-			<td class=""></td> 
+			<td class="warning"></td> 
 			<!-- Sharing --> 
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Autonomy --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Security --> 
 			<td class=""></td>
 			<!-- Universality --> 
-			<td class=""></td>
+			<td class="warning"></td>
 		</tr>
 		
 		<tr>
-			<td>Eve</td>
+			<td><a href="http://www.witheve.com/" target="_blank">Eve</a></td>
 			
 			<!-- Set-Up --> 
 			<td class=""></td>
 			<!-- Syntax -->
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Interactivity --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Discoverability --> 
 			<td class=""></td>
 			<!-- Dependencies --> 
@@ -455,9 +427,9 @@
 			<!-- Data Safety --> 
 			<td class=""></td>
 			<!-- Segregation --> 
-			<td class=""></td> 
+			<td class="success"></td> 
 			<!-- Sharing --> 
-			<td class=""></td>
+			<td class="success"></td>
 			<!-- Autonomy --> 
 			<td class=""></td>
 			<!-- Security --> 
@@ -474,58 +446,58 @@
 			<td>Linux</td>
 			
 			<!-- Set-Up --> 
-			<td class="explained">Installation is quite easy now, can be run from a USB stick</td>
+			<td class="warning explained">Installation is quite easy now, can be run from a USB stick</td>
 			<!-- Syntax -->
-			<td class="explained">Multiple languages possible, strong lock-in though, unfamiliar to most people, CLI is terrible</td>
+			<td class="warning explained">Multiple languages possible, strong lock-in though, unfamiliar to most people, CLI is terrible</td>
 			<!-- Interactivity --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Discoverability --> 
-			<td class="explained">man pages and built-in help</td>
+			<td class="warning explained">man pages and built-in help</td>
 			<!-- Dependencies --> 
-			<td class=""></td>
+			<td class="warning"></td>
 			<!-- Serialization --> 
-			<td class="explained">piping is almost nice but the pipes are so tiny</td>
+			<td class="danger explained">piping is almost nice but the pipes are so tiny</td>
 			<!-- Data Safety --> 
-			<td class="explained">don't shoot yourself in the foot</td>
+			<td class="danger explained">don't shoot yourself in the foot</td>
 			<!-- Segregation --> 
-			<td class="explained">Programs are written in an editor and run either in the terminal or with a GUI.</td> 
+			<td class="warning explained">Programs are written in an editor and run either in the terminal or with a GUI.</td> 
 			<!-- Sharing --> 
-			<td class="explained">package managers, distributions, compile your own</td>
+			<td class="danger explained">package managers, distributions, compile your own</td>
 			<!-- Autonomy --> 
-			<td class="explained">it's free and most things are free</td>
+			<td class="success explained">it's free and most things are free</td>
 			<!-- Security --> 
-			<td class="explained">good user-based security, lots of things need system-wide access though</td>
+			<td class="warning explained">good user-based security, lots of things need system-wide access though</td>
 			<!-- Universality --> 
-			<td class=""></td>
+			<td class="success"></td>
 		</tr>
 		
 		<tr>
 			<td>Windows</td>
 			
 			<!-- Set-Up --> 
-			<td class="explained">pre-installed on most costumer PCs, easy to install</td>
+			<td class="success explained">pre-installed on most costumer PCs, easy to install</td>
 			<!-- Syntax -->
-			<td class="explained">languages, GUIs</td>
+			<td class="success explained">languages, GUIs</td>
 			<!-- Interactivity --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Discoverability --> 
-			<td class="explained">Pretty bad since everything in menus</td>
+			<td class="danger explained">Pretty bad since everything in menus</td>
 			<!-- Dependencies --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Serialization --> 
-			<td class=""></td>
+			<td class="danger"></td>
 			<!-- Data Safety --> 
-			<td class="explained">Better make those back-ups</td>
+			<td class="danger explained">Better make those back-ups</td>
 			<!-- Segregation --> 
-			<td class="explained">programs usually have GUIs</td> 
+			<td class="danger explained">programs usually have GUIs</td> 
 			<!-- Sharing --> 
-			<td class="explained">Easier because of market domination</td>
+			<td class="success explained">Easier because of market domination</td>
 			<!-- Autonomy --> 
-			<td class="explained">Pretty bad because controlled by Microsoft</td>
+			<td class="danger explained">Pretty bad because controlled by Microsoft</td>
 			<!-- Security --> 
-			<td class="explained">Slowly improving but still pretty terrible</td>
+			<td class="warning explained">Slowly improving but still pretty terrible</td>
 			<!-- Universality --> 
-			<td class=""></td>
+			<td class="success"></td>
 		</tr>
 		
 		<tr>
@@ -624,17 +596,29 @@
 			<td>WWW 
 			<span class="explained">For the purpose of this comparison, the WorldWideWeb is considered to consist of the specifications of HTTP, HTML and CSS and to a certain extend JavaScript. These are implemented by servers such as Apache and browsers such as Firefox.</span></td>
 			
+			<!-- Set-Up --> 
 			<td class="danger explained">Sophisticated systems require a complex set-up, a dozen specialized tools and a complicated building and deployment process.</td>
+			<!-- Syntax -->
 			<td class="success explained">The web server can be implemented using any language as long as it adheres to the HTTP specification. Code for structure (HTML) and presentation (CSS) is interpreted by the browser and therefore is very limited in terms of syntax and extensibility and in practise only JavaScript can be used to encode behaviour. For that reason a number of compilers and pre-processors is available which further complicates the development process.</td>
+			<!-- Interactivity --> 
 			<td class="danger explained">Server-side the level of interactivity depends on the chosen language but it's generally low due to the limited interface of the web browser. To my knowledge, Seaside offers the most interactive experience. Client-side interactivity depends mostly on the browser and is continuously improving but still very low.</td>
+			<!-- Discoverability --> 
 			<td class="danger"></td>
+			<!-- Dependencies --> 
 			<td class="success explained">There are two kinds of dependencies of web applications: libraries and web-services. The management of the former is all but trivial as the large number of package managers illustrates. The complication of the latter depends on the service, but are usually subject to authentication and usage limitations.</td>
+			<!-- Serialization --> 
 			<td class="danger explained">Again depends on the server technology used. Most require a data serialization for persistence and HTTP forces all input and output to always be serialized including communication with web services. With good tools, most of this can be automated but usually not all.</td>
+			<!-- Data Safety --> 
 			<td class="danger"></td>
+			<!-- Segregation --> 
 			<td class="danger"></td>
-			<td class="success explained">The omnipresence of web clients make sharing a web application very simple once an adequate web server is set-up. This is very easy for simple applications and extremely complicated for complex applications. Since most code is executed on the server side, complexity rises with the number of users.</td>
+			<!-- Sharing --> 
+			<td class="info explained">The omnipresence of web clients make sharing a web application very simple once an adequate web server is set-up. This is very easy for simple applications and extremely complicated for complex applications. Since most code is executed on the server side, complexity rises with the number of users.</td>
+			<!-- Autonomy --> 
 			<td class="danger explained">While envisioned as a distributed system that allows its users to collaborate and share their own software easily, the client-server model favours a high degree of centralization because of the high cost of running a server. For this reason, most web users do not create their own applications and even static content is distributed using centralized services like provided by Facebook, Twitter or Google.</td>
+			<!-- Security --> 
 			<td class="danger explained">Web browsers restrict web application from accessing most of the hosting system which increases security but also limits their capabilities. Yet web applications are prone to many attacks such as session hijacking, cross-site scripting, phishing and many more.</td>
+			<!-- Universality --> 
 			<td class="warning explained"></td>
 		</tr>
 	</table>
