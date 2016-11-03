@@ -186,72 +186,90 @@
 			<td><a href="http://pharo.org/" target="_blank">
 				Smalltalk</a></td>
 			
-			<td title="Set-Up" class="info"></td>
-			<td title="Syntax" class="warning"></td>
-			<td title="Interactivity" class="info"></td>
-			<td title="Discoverability" class="info"></td>
-			<td title="Dependencies"class="warning"></td>
-			<td title="Serialization" class="info"></td>
-			<td title="Data Safety" class="success"></td>
-			<td title="Segregation" class="info"></td> 
-			<td title="Sharing" class="warning"></td>
-			<td title="Autonomy" class="info"></td>
-			<td title="Security" class="warning"></td>
-			<td title="Universality" class="info"></td>
+			<td title="Set-Up" class="info explained">
+				Just download an run the image.</td>
+			<td title="Syntax" class="warning explained">
+				Bein a very pure language, the syntax is quite elegant.</td>
+			<td title="Interactivity" class="info explained">
+				Every object can be inspected and changed live with immediate effect.</td>
+			<td title="Discoverability" class="info explained">
+				Objects are self-documenting, explorable and can be found by text- or example-based search.</td>
+			<td title="Dependencies"class="warning explained">
+				Third-party modules must be downloaded manually or from a repository.</td>
+			<td title="Serialization" class="info explained">
+				Objects live in the image, no need to serialize them ever.</td>
+			<td title="Data Safety" class="success explained">
+				All changes of the image are tracked and can be reverted. The image can get lost or corrupted though.</td>
+			<td title="Segregation" class="info explained">
+				Everything happens in the image</td> 
+			<td title="Sharing" class="success explained">
+				Modules need to be <em>filed-out</em> or exported to a repository. Alternatively, the whole image can be shared. Once the image is obtained, accessing the software is very easy.</td>
+			<td title="Autonomy" class="info explained">
+				There are many open-source implementations with high compatibility.</td>
+			<td title="Security" class="warning explained">
+				I'm not aware of built-in security mechanisms. It's only as secure as the operating system it runs on.</td>
+			<td title="Universality" class="info explained">
+				I'm not aware of any limits. Operating systems, embedded systems and even Smalltalk itself can be written in Smalltalk.</td>
 		</tr>
 		
 		<tr>
 			<td><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
 				JavaScript</a></td>
 			
-			<td title="Set-Up" class="info"></td>
-			<td title="Syntax" class="success"></td>
-			<td title="Interactivity" class="warning"></td>
-			<td title="Discoverability" class="warning"></td>
-			<td title="Dependencies" class="warning"></td>
-			<td title="Serialization" class="warning"></td>
-			<td title="Data Safety" class="warning"></td>
-			<td title="Segregation" class="success"></td> 
-			<td title="Sharing" class="success"></td>
-			<td title="Autonomy" class="info"></td>
-			<td title="Security" class="warning"></td>
-			<td title="Universality" class="success"></td>
+			<td title="Set-Up" class="info explained">
+				All you need is a browser and they're almost everywhere.</td>
+			<td title="Syntax" class="success explained">
+				Many many languages can be compiled to JavaScript these days.</td>
+			<td title="Interactivity" class="warning explained">
+				While some browser allow pretty good inspection into objects, changes are not persistent.</td>
+			<td title="Discoverability" class="warning explained">
+				Even experienced JavaScript programmers need to look up every second function name and signature.</td>
+			<td title="Dependencies" class="warning explained">
+				There are a million package managers but it gets really messy really quickly (left-pad, anyone?).</td>
+			<td title="Serialization" class="warning explained">
+				Almost anything keep-worthy must be serialized. But the native JSON format is basically the de-facto standard on the web.</td>
+			<td title="Data Safety" class="warning explained">
+				Nothing buil-in but easy to integrate with any version control system.</td>
+			<td title="Segregation" class="success explained">
+				JavaScript programs are almost always delivered in source code so how every you run them is not too far away from how you edit them.</td> 
+			<td title="Sharing" class="success explained">
+				Just send the files. Everybody has a browser and there are tons of libraries to enhance compatibility.</td>
+			<td title="Autonomy" class="info explained">
+				Many open-source implementations are available.</td>
+			<td title="Security" class="warning explained">
+				The code has full access to the page it's running on. Most security comes from the virtual machine being sand-boxed in a browser.</td>
+			<td title="Universality" class="success explained">
+				Depends on the interpreter but very wide applicability nowadays.</td>
 		</tr>
 		
 		<tr>
 			<td><a href="https://www.python.org/" target="_blank">
 				Python</a></td>
 			
-			<td title="Set-Up" class="warning"></td>
-			<td title="Syntax" class="warning"></td>
-			<td title="Interactivity" class="warning"></td>
-			<td title="Discoverability" class="success"></td>
-			<td title="Dependencies" class="danger"></td>
-			<td title="Serialization" class="warning"></td>
-			<td title="Data Safety" class="warning"></td>
-			<td title="Segregation" class="warning"></td> 
-			<td title="Sharing" class="danger"></td>
-			<td title="Autonomy" class="info"></td>
-			<td title="Security" class="warning"></td>
-			<td title="Universality" class="info"></td>
-		</tr>
-		
-		<tr>
-			<td><a href="https://www.java.com" target="_blank">
-				JVM</a></td>
-			
-			<td title="Set-Up" class="success"></td>
-			<td title="Syntax" class="success"></td>
-			<td title="Interactivity" class="danger"></td>
-			<td title="Discoverability" class="success"></td>
-			<td title="Dependencies" class="warning"></td>
-			<td title="Serialization" class="danger"></td>
-			<td title="Data Safety" class="warning"></td>
-			<td title="Segregation" class="danger"></td> 
-			<td title="Sharing" class="warning"></td>
-			<td title="Autonomy" class="warning"></td>
-			<td title="Security" class="success"></td>
-			<td title="Universality" class="info"></td>
+			<td title="Set-Up" class="warning explained">
+				Depends very much on your operating system. There are also packages to ease set-up but it's usually a hassle.</td>
+			<td title="Syntax" class="warning explained">
+				Only one syntax but a rather clean one (if you like significant whitespace).</td>
+			<td title="Interactivity" class="warning explained">
+				There are debuggers which allow to inspect a running system but not make changes to it on-the-fly. Also, the use of a debugger is not very common.</td>
+			<td title="Discoverability" class="success explained">
+				Objects are self-documenting and can be dynamically explored in the REPL.</td>
+			<td title="Dependencies" class="danger explained">
+				Installing packages for Python is too many times very painful.</td>
+			<td title="Serialization" class="warning explained">
+				Necessary for persistence but good native support.</td>
+			<td title="Data Safety" class="warning explained">
+				Version control system adviced but not commonly used, at least in the scientific community.</td>
+			<td title="Segregation" class="warning explained">
+				Python programs are usually run as applications which is far away from the editor to change them. If used as script segregation is less.</td> 
+			<td title="Sharing" class="danger explained">
+				Few people who are not on Linux have Python installed and even if, it might be the wrong version. Putting a module in a completely self-contained package is very tricky.</td>
+			<td title="Autonomy" class="info explained">
+				The language itself is open-source and many open-source implemenations available.</td>
+			<td title="Security" class="danger explained">
+				Only as good as the operating system that runs it.</td>
+			<td title="Universality" class="info explained">
+				Python can be used for virtually anything.</td>
 		</tr>
 		
 		<tr>
@@ -291,6 +309,36 @@
 		</tr>
 		
 		<tr>
+			<td><a href="https://www.java.com" target="_blank">
+				JVM</a></td>
+			
+			<td title="Set-Up" class="success explained">
+				Download and install the Java development kit (JDK).</td>
+			<td title="Syntax" class="success explained">
+				Many languages can be compiled to the bytecode of the JVM.</td>
+			<td title="Interactivity" class="danger explained">
+				Programs are usually distributed as bytecode and run as applications.</td>
+			<td title="Discoverability" class="success explained">
+				As a typed language, support for capability discovery is usually good but requires IDE.</td>
+			<td title="Dependencies" class="danger explained">
+				Usage of dependency manager is not common.</td>
+			<td title="Serialization" class="danger explained">
+				Object databases are available must most information must be serialized without any good native support. XML is wide-spread and at all times present.</td>
+			<td title="Data Safety" class="warning explained">
+				Version control system advised.</td>
+			<td title="Segregation" class="danger explained">
+				Programs are usually discributed as bytecode and run as applications.</td> 
+			<td title="Sharing" class="warning explained">
+				Chances that a Java runtime environment (JRE) is installed are good and it's easy to install if not.</td>
+			<td title="Autonomy" class="warning explained">
+				There are open-source implemenations but Java is still controlled by a single company.</td>
+			<td title="Security" class="warning explained">
+				Access to the system can be restricted.</td>
+			<td title="Universality" class="info explained">
+				Java runs everywhere.</td>
+		</tr>
+		
+		<tr>
 			<th colspan="13">Applications</th>
 		</tr>
 		
@@ -298,54 +346,90 @@
 			<td><a href="http://www.squeakland.org/" target="_blank">
 				Etoys</a></td>
 			
-			<td title="Set-Up" class="info"></td>
-			<td title="Syntax" class="success"></td>
-			<td title="Interactivity" class="info"></td>
-			<td title="Discoverability" class="success"></td>
-			<td title="Dependencies" class="danger"></td>
-			<td title="Serialization" class="success"></td>
-			<td title="Data Safety" class="danger"></td>
-			<td title="Segregation" class="info"></td> 
-			<td title="Sharing" class="warning"></td>
-			<td title="Autonomy" class="info"></td>
-			<td title="Security" class="danger"></td>
-			<td title="Universality" class="warning"></td>
+			<td title="Set-Up" class="info explained">
+				Just download and run the image.</td>
+			<td title="Syntax" class="success explained">
+				Tile-based is default but can be switched to textual programming as well.</td>
+			<td title="Interactivity" class="info explained">
+				Every object can be inspected and changed while running the program.</td>
+			<td title="Discoverability" class="success explained">
+				Objects are self-documenting. Help and an object catalogue are included in the environment.</td>
+			<td title="Dependencies" class="danger explained">
+				Actually I've never come across instructions of how to access third-party software.</td>
+			<td title="Serialization" class="info explained">
+				Everything lives in the image. Only external data must be de-/serialized.</td>
+			<td title="Data Safety" class="success explained">
+				Everything is automatically persisted in the image. Recovering old state is difficult though.</td>
+			<td title="Segregation" class="info explained">
+				Writing and running a program happens in the same environment and mode.</td> 
+			<td title="Sharing" class="warning explained">
+				Projects can be saved as files. The receiver needs to download Etoys and import the project.</td>
+			<td title="Autonomy" class="success explained">
+				I'm only aware of a single open-source implementation.</td>
+			<td title="Security" class="danger explained">
+				Only as secure as the operating system it's running on.</td>
+			<td title="Universality" class="warning explained">
+				Considered an learning environment. Not meant for the creation of complex systems although could be used for anything since it's stil Smalltalk.</td>
 		</tr>
 		
 		<tr>
 			<td><a href="https://scratch.mit.edu/" target="_blank">
 				Scratch</a></td>
 			
-			<td title="Set-Up" class="info"></td>
-			<td title="Syntax" class="warning"></td>
-			<td title="Interactivity" class="success"></td>
-			<td title="Discoverability" class="success"></td>
-			<td title="Dependencies" class="danger"></td>
-			<td title="Serialization" class="danger"></td>
-			<td title="Data Safety" class="success"></td>
-			<td title="Segregation" class="info"></td> 
-			<td title="Sharing" class="info"></td>
-			<td title="Autonomy" class="danger"></td>
-			<td title="Security" class="success"></td>
-			<td title="Universality" class="danger"></td>
+			<td title="Set-Up" class="info explained">
+				Just open the webpage.</td>
+			<td title="Syntax" class="warning explained">
+				Only a single tile-based langauge available.</td>
+			<td title="Interactivity" class="success explained">
+				Objects can be manipulated easily while the program is running.</td>
+			<td title="Discoverability" class="success explained">
+				Inspectors make it easy to discover capabilities of objects and there is a catalogue for existing software.</td>
+			<td title="Dependencies" class="danger explained">
+				I don't know if it's possible to access third-party software.</td>
+			<td title="Serialization" class="success explained">
+				Very rarely necessary but very difficult if.</td>
+			<td title="Data Safety" class="success explained">
+				Automatic saving but no control over history.</td>
+			<td title="Segregation" class="info explained">
+				Writing and running programs happens in the same environment.</td> 
+			<td title="Sharing" class="info explained">
+				By sending a URL.</td>
+			<td title="Autonomy" class="danger explained">
+				Complete dependency on MIT.</td>
+			<td title="Security" class="success explained">
+				Secure through limitation.</td>
+			<td title="Universality" class="danger explained">
+				Very limited usage. Mostly animations and very simple games.</td>
 		</tr>
 		
 		<tr>
 			<td><a href="https://de.libreoffice.org/discover/calc/" target="_blank">
 				Spreadsheet</a></td>
 			
-			<td title="Set-Up" class="success"></td>
-			<td title="Syntax" class="warning"></td>
-			<td title="Interactivity" class="info"></td>
-			<td title="Discoverability" class="warning"></td>
-			<td title="Dependencies" class="danger"></td>
-			<td title="Serialization" class="success"></td>
-			<td title="Data Safety" class="danger"></td>
-			<td title="Segregation" class="info"></td> 
-			<td title="Sharing" class="sucess"></td>
-			<td title="Autonomy" class="success"></td>
-			<td title="Security" class="danger"></td>
-			<td title="Universality" class="danger"></td>
+			<td title="Set-Up" class="success explained">
+				Requires download and installation.</td>
+			<td title="Syntax" class="warning explained">
+				Limited but very simple.</td>
+			<td title="Interactivity" class="info explained">
+				Values can be directly modified with immediate effect.</td>
+			<td title="Discoverability" class="warning explained">
+				Auto-complete for function names and signature. Further information must be obtained from help file.</td>
+			<td title="Dependencies" class="danger explained">
+				Very difficult to use third-party spreadsheets.</td>
+			<td title="Serialization" class="success explained">
+				Usually no serialization neccessary. If so, CSV is very wide-spread.</td>
+			<td title="Data Safety" class="danger explained">
+				Manual saving required and difficult to integrate with VCS.</td>
+			<td title="Segregation" class="info explained">
+				No segregation possible.</td> 
+			<td title="Sharing" class="success explained">
+				Most users have a spreadsheet application installed. Some compatibility issues are common.</td>
+			<td title="Autonomy" class="warning explained">
+				Open-source implementations available, but dominated by Microsoft.</td>
+			<td title="Security" class="danger explained">
+				No security measures provided. As secure as the operating system.</td>
+			<td title="Universality" class="danger explained">
+				Very limited in use cases and permittable complexity.</td>
 		</tr>
 		
 		<tr>
@@ -370,36 +454,57 @@
 			<td><a href="http://www.adobe.com/products/flash-builder.html" target="_blank">
 				Flash</a></td>
 			
-			<td title="Set-Up" class="success"></td>
-			<td title="Syntax" class="danger"></td>
-			<td title="Interactivity" class="success"></td>
-			<td title="Discoverability" class="warning"></td>
-			<td title="Dependencies" class="danger"></td>
-			<td title="Serialization" class="danger"></td>
-			<td title="Data Safety" class="danger"></td>
-			<td title="Segregation" class="danger"></td> 
-			<td title="Sharing" class="success"></td>
-			<td title="Autonomy" class="warning"></td>
-			<td title="Security" class="warning"></td>
-			<td title="Universality" class="warning"></td>
+			<td title="Set-Up" class="warning explained">
+				Download and install application but requires licence.</td>
+			<td title="Syntax" class="danger explained">
+				Single syntax available.</td>
+			<td title="Interactivity" class="success explained">
+				Objects can be mostly modified directly with immediate effect.</td>
+			<td title="Discoverability" class="warning explained">
+				Usage of help file and external documentation neccessary, albeit well structured.</td>
+			<td title="Dependencies" class="danger explained">
+				Very difficult to use third-party software.</td>
+			<td title="Serialization" class="danger explained">
+				Necessary to persist data, very painful.</td>
+			<td title="Data Safety" class="danger explained">
+				Manual saving required and difficult to integrate with VCS.</td>
+			<td title="Segregation" class="danger explained">
+				Programs are run with a completely different environment than they are written.</td> 
+			<td title="Sharing" class="success explained">
+				Flash players used to be very wide-spread but are decreasing in popularity.</td>
+			<td title="Autonomy" class="danger explained">
+				Completely dependent on Adobe.</td>
+			<td title="Security" class="success explained">
+				Some built-in security mechanisms are provided.</td>
+			<td title="Universality" class="warning explained">
+				Programs are quite restricted in their capabilities.</td>
 		</tr>
 		
 		<tr>
 			<td><a href="http://mathworks.com" target="_blank">
 				Matlab</a></td>
 			
-			<td title="Set-Up" class="danger"></td>
-			<td title="Syntax" class="danger"></td>
-			<td title="Interactivity" class="danger"></td>
-			<td title="Discoverability" class="danger"></td>
-			<td title="Dependencies" class="danger"></td>
-			<td title="Serialization" class="danger"></td>
-			<td title="Data Safety" class="danger"></td>
-			<td title="Segregation" class="info"></td> 
-			<td title="Sharing" class="danger"></td>
-			<td title="Autonomy" class="danger"></td>
+			<td title="Set-Up" class="danger explained">
+				Very expensive licence.</td>
+			<td title="Syntax" class="danger explained">
+				Syntax is quite cumbersome.</td>
+			<td title="Interactivity" class="danger explained">
+				Debugging is very difficult.</td>
+			<td title="Discoverability" class=""></td>
+			<td title="Dependencies" class="danger explained">
+				Must be manually managed.</td>
+			<td title="Serialization" class=""></td>
+			<td title="Data Safety" class="danger explained">
+				Manual saving neccessary. Integration with VCS possible but not common.</td>
+			<td title="Segregation" class="info explained">
+				Software is usually created and run in the same environment</td> 
+			<td title="Sharing" class="warning explained">
+				Very difficult to package all dependencies.</td>
+			<td title="Autonomy" class="danger explained">
+				Completely dependent on MathWorks</td>
 			<td title="Security" class="danger"></td>
-			<td title="Universality" class="danger"></td>
+			<td title="Universality" class="warning explained">
+				Very restricted use cases but extensions are available.</td>
 		</tr>
 		
 		<tr>
@@ -518,19 +623,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script>
-	$('.explained').each(function () {
-		$(this).data('content', $(this).html());
-		$(this).html('<span class="glyphicon glyphicon-info-sign"></span>');
-		$(this).css('cursor', 'pointer');
-	});
-	$('.explained').popover({
-		placement: "top",
-		trigger: "click",
-		container: 'body',
-		html: true
-	});
-	
+	<script>	
 	// Calculate points
 	$('tr').each(function () {
 		points = 0;
@@ -541,13 +634,12 @@
 			
 				add = 0;
 				switch($(this).attr('class').split(' ')[0]) {
-					case 'danger':  add = -1; break;
-					case 'warning': add = 0; break;
-					case 'success': add = 1; break;
-					case 'info':    add = 3; break;
+					case 'danger':  add = -1; message='complicated'; break;
+					case 'warning': add =  0; message='ok'; break;
+					case 'success': add =  1; message='good'; break;
+					case 'info':    add =  3; message='excellent'; break;
 				}
 				points += add;
-				message = unit(add, 'point');
 			}
 				
 			
@@ -559,6 +651,18 @@
 	function unit(amount, name) {
 		return amount + ' ' + name + (Math.abs(amount) == 1 ? '' : 's');
 	}
+	
+	$('.explained').each(function () {
+		$(this).data('content', $(this).html());
+		$(this).html('<span class="glyphicon glyphicon-info-sign"></span>');
+		$(this).css('cursor', 'pointer');
+		$(this).popover({
+			placement: "top",
+			trigger: "hover",
+			container: 'body',
+			html: true
+		});
+	});
 	</script>
   </body>
 </html>
