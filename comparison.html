@@ -514,15 +514,24 @@
 		<tr>
 			<td>Linux</td>
 			
-			<td title="Set-Up" class="warning"></td>
-			<td title="Syntax" class="success"></td>
-			<td title="Interactivity" class="warning"></td>
-			<td title="Discoverability" class="success"></td>
-			<td title="Dependencies" class="warning"></td>
-			<td title="Serialization" class="danger"></td>
-			<td title="Data Safety" class="danger"></td>
-			<td title="Segregation" class="warning"></td> 
-			<td title="Sharing" class="warning"></td>
+			<td title="Set-Up" class="warning explained">
+				Installation process is improving but still a major hurdle.</td>
+			<td title="Syntax" class="success explained">
+				Different interpreters and compilers available.</td>
+			<td title="Interactivity" class="warning explained">
+				Memory and disk contents can be directly inspected and manipulated but only in a unstructured way.</td>
+			<td title="Discoverability" class="success explained">
+				Man pages allow to discover functionality on-line. New tools must be searched externally.</td>
+			<td title="Dependencies" class="warning explained">
+				Package managers exist but changes are often time irreversible.</td>
+			<td title="Serialization" class="danger explained">
+				Data must always be serialized for persistence and exchange. Little standardization of formats.</td>
+			<td title="Data Safety" class="danger explained">
+				Few mechanisms to guard against irreversible operations.</td>
+			<td title="Segregation" class="warning explained">
+				Source code of much software is available and can be edited and executed in terminal.</td>
+			<td title="Sharing" class="warning explained">
+				Incompatibilities between distributions and difficult to package all dependencies.</td>
 			<td title="Autonomy" class="info"></td>
 			<td title="Security" class="success"></td>
 			<td title="Universality" class="info"></td>
@@ -603,18 +612,30 @@
 		<tr>
 			<td>WWW</td>
 			
-			<td title="Set-Up" class="info"></td>
-			<td title="Syntax" class="info"></td>
-			<td title="Interactivity" class="warning"></td>
-			<td title="Discoverability" class="warning"></td>
-			<td title="Dependencies" class="success"></td>
-			<td title="Serialization" class="danger"></td>
-			<td title="Data Safety" class="danger"></td>
-			<td title="Segregation" class="danger"></td> 
-			<td title="Sharing" class="info"></td>
-			<td title="Autonomy" class="info"></td>
-			<td title="Security" class="warning"></td>
-			<td title="Universality" class="success"></td>
+			<td title="Set-Up" class="info explained">
+				Web browsers are installed on almost every consumer computer.</td>
+			<td title="Syntax" class="warning explained">
+				Wide range available for describing dynamic behaviour but limited for layout description.</td>
+			<td title="Interactivity" class="warning explained">
+				Elements can inspected and manipulated directly, not persistently though.</td>
+			<td title="Discoverability" class="warning explained">
+				Functionality of web application can be discovered easily by humans but not by machines.</td>
+			<td title="Dependencies" class="success explained">
+				Available resources can easily be used but sometimes require complicated authentication.</td>
+			<td title="Serialization" class="warning explained">
+				Everything must be serialized for communication. Standardized formats are available.</td>
+			<td title="Data Safety" class="danger explained">
+				Not meant to be persistent. Persistence is fragile and must be implemented by application.</td>
+			<td title="Segregation" class="danger explained">
+				Software is created and executed in two completely different environments.</td>
+			<td title="Sharing" class="info explained">
+				Just pass along the URL.</td>
+			<td title="Autonomy" class="success explained">
+				Theoretically no dependencies exist but in reality host space and domain names are needed.</td>
+			<td title="Security" class="warning explained">
+				Computer is protected by browser but data in the web is prone to many different attacks.</td>
+			<td title="Universality" class="success explained">
+				Not suitable for very interactive or time-critical applications.</td>
 		</tr>
 	</table>
 	</div>
