@@ -1,6 +1,6 @@
 # Enabling Software Literacy
 
-Software is fundamentally broken. It's limited, never quite works the way we want it to, but it can't be changed, can't be combined and can't be trusted.
+Software nowadays is fundamentally broken. It's limited, never quite works the way we want it to, but it can't be changed, can't be combined and can't be trusted.
 
 More and more, users are put into - sometimes golden - cages, and forced to hand over their ideas, personal information, and even identities to international quasi-monopolies that put everything into walled gardens which the creator can only access through tiny keyholes.
 
@@ -9,9 +9,9 @@ To fix this, we need to increase the currently tiny number of people who are abl
 
 ## What's this about?
 
-This document focuses on the problems that *zells* means to solve. The following sections describe why these problems need to be solved, what the problems are, the solution, and finally how it solves each previously described problem. If you've never written a piece of software, most of the described problems will be unknown to you, but some are universal and affect everybody.
+This document is about software literacy and the problems that prevent it. The following sections describe why these problems need to be solved, what the problems are, proposes a solution, and how it can solve each problem. If you've never written a piece of software, you probably won't have encountered most of these problems, but some are universal and affect everybody.
 
-The purpose of this document is to provide a basis for discussion about the justification of the project as well as validity and effectiveness of its approach.
+The purpose of this document is to provide a basis for discussion about the justification of the proposed solution as well as validity and effectiveness of its approach.
 
 
 ## Why is Software Literacy important?
@@ -60,7 +60,7 @@ And last but not least, **security** is a major and often overlooked challenge. 
 
 ## So what's the Solution?
 
-The tool that eliminates all these incidental complications, is a global software platform, based on a unified programming model consisting of *composable*, *distributed*, *secure*, *persistent*, *dynamic* and *abstractable* objects, called *cells*.
+The tool that eliminates all these incidental complications, is a software platform, based on a unified programming model consisting of *composable*, *distributed*, *secure*, *persistent*, *dynamic* and *abstractable* objects. These objects are called *cells* since biological cells were a great inspiration to the model.
 
 **Composable** - Each cell has a name and can contain any number of other cells. This forms a hierarchy where every cell is uniquely identified by its canonical path. 
 
@@ -70,9 +70,9 @@ The tool that eliminates all these incidental complications, is a global softwar
 
 **Persistent** - Any change to a cell is automatically saved, along with the entire history of all changes, including possibly alternative timelines.
 
-**Dynamic** - Cells have behaviour by reacting to messages consisting of another cell. This way, a cell can control how it looks and reacts to input.
+**Dynamic** - A cell can receive messages and reacts to each according to its behaviour. A message is always a cell itself. By incorporating cells that react to certain messages, a cell can control how it looks and reacts to input. Apart from sending messages to other cells, no assumption is made about how the behaviour is defined.
 
-**Abstractable** - Each cell is deduced from another cell. The new cell inherits the reaction and children of this stem cell which it can then overwrite. This way, properties shared by several cells can be combined in a single cell and do not need to be duplicated unnecessarily.
+**Abstractable** - Each cell is a specialization of another cell. The specialized cell inherits the behaviour and children of this stem cell which it is free to replace. This way, properties shared by several cells can be combined in a single, more abstract cell and do not need to be duplicated unnecessarily.
 
 
 ## How does this solve anything?
