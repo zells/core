@@ -6,14 +6,17 @@ This document describes the *zells* protocol for delivering messages between nod
 
 ## Signals
 
-- DELIVER: delivery (context, target, message, role)
-- RECEIVED: path
+- DELIVER <context:Path> <target:Path> <receiver:Path> <message:Path> <guid:String>
+- RECEIVED
+- FAILED <reason:String>
+- JOIN <path:Path> <connection:String>
+- LEAVE <path:Path> <connection:String>
 - OK
-- FAILED: reason
-- JOIN: path, connection (e.g. host:port)
-- LEAVE: path
 
 ## Syntax
 
-- path
-- escaping
+- Path := <Name>[.<Name>]
+- Name := Child|<Parent>|<Root>
+- Parent := ^
+- Root := *
+- Child := any symbol, escaped with double quotes
