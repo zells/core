@@ -7,7 +7,7 @@ The model consists of *composable*, *dynamic*, *concurrent*, *abstractable* and 
 
 ## Composable
 
-A cell can contain any number of other cells as children. Each *child* has name that is unique amongst its siblings. 
+A cell can contain any number of other cells as children. Each *child* has a name that is unique amongst its siblings. 
 
 ```text
 Child := <symbol>+
@@ -23,7 +23,7 @@ Name := Child
 To move up in the tree, a path can also contain a reference to the *parent* of a cell as well as the *root* of the tree.
 
 ```text
-Name := ..|<parent>|<root>
+Name := Child|<parent>|<root>
 ```
    
 ### Example
@@ -50,13 +50,7 @@ A cell may have dynamic behaviour in the form of a *reaction* which is executed 
 Message := Path
 ```
 
-A reaction can cause any number of *message sends* which define the paths of a *receiver* cell and of the message to be sent.
-
-```text
-Reaction := MessageSend*
-MessageSend := Receiver Message
-Receiver := Path
-```
+A reaction can contain any kind of behaviour, including sending messages to other cells.
 
 ### Example
 
@@ -80,7 +74,7 @@ then every time `A` receives any message, it will cause `°.B` to be sent to `°
 
 ## Concurrent
 
-All messages of a reaction are sent *concurrently*. Furthermore, each message is sent by a *messenger* which will keep trying to deliver the message until it is received or the messenger decides it's not deliverable. This way, data flow can be synchronized without requiring a fixed order of execution. Therefore messages may be sent to cells before they exist.
+All messages are received *concurrently* without any specific order. Furthermore, each message is sent by a *messenger* which will keep trying to deliver the message until it is received or the messenger decides it's not deliverable. This way, data flow can be synchronized without requiring a fixed order of execution. Therefore messages may be sent to cells before they exist.
 
 ### Example
 
@@ -99,11 +93,7 @@ The summation waits (denoted by `~`) until the calculation of both factors is co
 
 ## Abstractable
 
-Every cell has a *stem* cell from which it inherits its reaction and all children. Each inherited child and the reaction can be replaced by the *specialized* cell. In order to send a message to an overwritten cell or execute and overwritten reaction, a path may contain names referring to the *stem* of a cell.
-
-```text
-Name := ..|<stem>
-```
+Every cell has a *stem* cell from which it inherits its reaction and all children. Each inherited child and the reaction can be replaced by the *specialized* cell.
 
 ### Example
 
