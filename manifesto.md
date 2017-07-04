@@ -1,105 +1,63 @@
 # Enabling Software Literacy
 
-Software nowadays is fundamentally broken. It's limited, never quite works the way we want it to, but it can't be changed, can't be combined and can't be trusted.
+The Computer has changed the way we live, work and play dramatically and is certainly one of the most important inventions in the history of humanity. But compared to books and the printing press, we're still in the dark ages. The real computer revolution has yet to happen.
 
-More and more, users are put into - sometimes golden - cages, and forced to hand over their ideas, personal information, and even identities to international quasi-monopolies that put everything into walled gardens which the creator can only access through tiny keyholes.
+For millenia, text was authored and understood by only a tiny fraction of society, the scholars. The general public was not interested nor encouraged to read and write. Literacy was deemed too advanced a skill for most people and their only access to the written word remained through the weekly interpretation of the local scholar. This power over text let a handful of institutions control the thoughts and lives of the illiterate.
 
-To fix this, we need to increase the currently tiny number of people who are able to write, modify, combine and share software. We need a tool that makes writing software easy and fun, and accessible to everyone. A tool that enables software literacy.
+Besides social norms, the most important reason for a limited access to books was that they were expensive to produce, mostly because of the cost of making copies. The small therefore number of books and even smaller numbers of producers meant there was no reason to learn to read yourself. Hearing the reading and interpretation every Sunday seemed good enough. And you wouldn't even think about writing a book unless you had a very good reason, enough funds and of course the permission of the ones in charge.
 
+The printing press reduced the production cost of texts enough so that people with unconstitutional ideas could afford to write and publish them. Soon there were so many books, that in order access them, you simply had to learn to read yourself. Eventually, the ideas you found would inspire your own ideas worth writing about. The result of this upword spiral of literacy was that in a 100 years we learned far more about our universe and ourselves than in the 1000 years before.
 
-## What's this about?
+The scholars of our times, the ones who have full access to the medium computer, are called programmers. Instead of static text or graphics, they produce, analyse and manipulate dynamic models which can interact with their environment. The users only get access to a small portion of the models, interpreted through a user interface. The institutions in control of these models and interpretations, and therefore making the rules we live by, are international coporations. The general public is not interested nor encouraged to become software literate, unless to join one of the institutions.
 
-This document is about software literacy and the problems that prevent it. The following sections describe why these problems need to be solved, what the problems are, proposes a solution, and how it can solve each problem. If you've never written a piece of software, you probably won't have encountered most of these problems, but some are universal and affect everybody.
-
-The purpose of this document is to provide a basis for discussion about the justification of the proposed solution as well as validity and effectiveness of its approach.
-
-
-## Why is Software Literacy important?
-
-In a world increasingly controlled by software, **understanding** how the systems that we interact with every day work, can eliminate a lot of frustration and superstition. Just as knowing why apples fall down and aeroplanes fly up, the citizens of the 21st century need to know that computers are not magical boxes but composed of dynamic models.
-
-Such models are ideal for **learning** about the inner workings of the universe that we live in, because the best way to understand something is to try to replicate it. And in the virtual world of computers, everything can be replicated, from complex physical phenomena to abstract ideas, and even your own mind.
-
-To do so requires **thinking** about your own thinking and describing your own, often unconscious, mental models. This enhances your analytical and logical skills as well as your ability of self-reflection which benefits every aspect of life.
-
-Once a mental model is externalized as software, it can be shared and improved in **collaboration**, across time and space. This allows to discuss ideas at a drastically different level. Ideas are no longer static descriptions that need to be read and understood. Encoded in software, they are living, responsive systems that can be tested and interacted with directly, independently from their creator.
-
-But maybe most important is the **empowerment** that software literacy has to offer. Being able to solve your own problems means you no longer depend on somebody else to care, understand and solve them for you. You can build exactly what you need or adapt something that is close. By leveraging the power of automation, you can solve your problems faster, and more reliably than by hand.
-
-The benefits of *understanding*, *learning*, *thinking*, *collaboration* and *empowerment* that a wide-spread software literacy could provide for humanity would eclipse even the impact of the printing press and the steam engine. It would bring about a true computer revolution.
+Although software is as good as free to copy, producing it is still very costly since it requires a vast amount of specialized knowledge and training. There is no printing press for software yet. Something that reduces production costs enough to enable an upward spiral of software literacy. If we achieve this, the result could be even more transformative than the scientific revolution.
 
 
-## What prevents Software Literacy?
+## What is Software Literacy?
 
-Despite the many advantages of software literacy, learning how to write software is not an easy task nor is practising it a very pleasant one. One reason is certainly the current society and culture of programmers which is evidently uninviting for newcomers. But with a larger and more diverse community of software literates, this problem solves itself. Another, more fundamental reason is that solving complex problems is inherently complicated. But the fact that even the simplest problem is unproportionally difficult to solve with software nowadays, indicates that there must be unnecessary, incidental complications that make it harder than it needs to be.
+Software literacy is the ability to not just *use* software, but create, understand, change and share dynamic models through software. Like text literacy, being software literate comes with many personal advantages. Here's one example.
 
-A tool that enables software literacy must eliminate most if not all incidental complications. So what are they?
+Mary owns a small restaurant. She is software literate but not a professional programmer. She uses an extensive suite of software to run her business, which she could probably not create herself but she is able to **understand** what these systems do and how they do it. Instead of seeing magical black boxes, she feels in control of her devices. Today she looked at the data that her new smart fridge sends to its manufacturer and is relieved to see that it only includes total operation time and malfunctions.
 
-The most important one is the **segregation** of authoring and using software. This prohibits the user from inspecting the software they are using in order to understand it on a deeper level and manipulate its data in ways unanticipated by its developers. It also makes modifying it very difficult. Even if it's legally possible, you not only need to access the source code and understand it, you also need to be able to rebuild the program from that source.
+For today she planned to work on her new customer prediction software. In the past she regularly misjudged how busy the place would be the next evening so she was either understaffed or had to send waiters home. Trying to express her intuitions in software forced her to **think** about her own mental models regarding how people behave. She had to find a way to explicitly express something that so far was always just a gut feeling.
 
-Rebuilding existing programs requires to **set-up** the software platform but also all the software needed to transform the source code into a running program. This usually requires some expertise in the operating system and more often than not the permission to make system-wide changes which is not always given.
+To make a good prediction, she **learned** about many aspects of human behaviour, specifically about group dynamics. She noticed for example, that the time of when the first customer arrives heavily influences the total number of customers for any given evening. She tested this theory by asking friends to come at specific times and integrated the results into the model.
 
-Another reason that prevents a user from modifying a piece of software is that it might be written in a **syntax** that is unknown to them, since every software platform dictates its own which must be learned and memorized.
+Last week she sent the model to a fellow software literate restaurant owner, to find out how well it worked in his case. Immediately he found an assumption that didn't hold in his case but still it worked surprisingly well. Mary is already looking forward to improve the model even more through this **collaboration**.
 
-But even more idiosyncratic are the libraries of a specific platform. There is usually no **discoverability** for which libraries exist and how they are used. Instead, external documentation and help from peers is required for even the simplest tasks that are not memorized.
-
-And even after all platform-specific hurdles are overcome, there is no obvious link between the change of a code segment and the effect it has on the program execution. Few development environments provide true **interactivity** when analysing the running program so modifications have an immediate effect. Instead, the program must be rebuilt and much of the previous state recreated.
-
-An additional complication when writing software and also building from source are external **dependencies**. Almost every software depends on other software which needs to be acquired and installed in its entirety, even if only a small part is used. This software might itself depend on further software and so on. In the worst case, two dependencies depend on the same software but in different, conflicting versions.
-
-Managing these dependencies can be avoided by using remote services. But amongst other complications they introduce like authentication, they require **serialization** of all data that is sent or received. This process is often very cumbersome since a lot of information is lost during serialization which then needs to be restored, usually by hand. Also, any data that needs to be stored, for example in a file or database, must be serialized.
-
-Storing to disk is necessary for **data safety**, since any data that is not saved is lost as soon as the program is terminated. This is almost always the case for the program's state (which is sometimes desired) and especially for the undo buffer. Many times important data has been lost by either not saving or accidentally overwriting it.
-
-But perhaps most frustrating (and not only for software writers) is the fact that even decades after the creation of the internet, **sharing** a piece of software is still an unsolved problem. This is especially true for programs but also for videos, pictures and formatted text. You either need to send it to a - hopefully trusted and secure - third party or to each recipient individually. In any case, you have to make sure that the computer of the recipient is able to interpret the content. This requires to export it to several formats which then need to be kept in sync with the source. But even then the sent version is quickly out of date.
-
-As a result, the most popular way of creating and sharing content is through a service provider, which is usually a for-profit company whose bottom line might not be aligned with the interests of its users. This loss of **autonomy** usually goes hand in hand with loss of control over one's creations and virtual identity, along with earned reputation. Neither can be transferred to another provider in case the current one can no longer be trusted or goes out of business.
-
-And last but not least, **security** is a major and often overlooked challenge. This includes creating secure programs but also protecting your own system, data and personal information form malicious software and people. Passwords provide pseudo-security at best. Too much trust is required to be given to some software, and not enough can be given to other.
+During her lunch break, her friend asks her why she learned about software in the first place. Mary tells her that it was the fact that her ordering system did not allow customers to change their mind after the order has been sent to the kitchen. Mary suspected that she lost a couple of regulars because of that, but she could not convince the developers to change it. So she learned to do it herself. Mary realizes that it's this feeling of **empowerment**, to be able to solve her own problems, that she treasures the most about being software literate.
 
 
-## So what's the Solution?
+## What makes Software difficult?
 
-The tool that eliminates all these incidental complications, is a software platform, based on a unified programming model consisting of *composable*, *distributed*, *secure*, *persistent*, *dynamic* and *abstractable* objects. These objects are called *cells* since biological cells were a great inspiration to the model.
+Like writing a good novel, creating a complex software system is inherently difficult. But even doing something equivalent to a shopping list in software requires a substantial investment. For most small problems you can find specialized tools, but they have their own drawbacks. These tools are by definition limited and therefore also 
+limit the kind of ideas you can express with them. The same pen and paper can be used to write a shopping list or an award-winning novel. Having to learn a new tool impedes the transition from one to the other unneccessarly.
 
-**Composable** - Each cell has a name and can contain any number of other cells. This forms a hierarchy where every cell is uniquely identified by its canonical path. 
+Software authoring tools without this limitation are called general-purpose programming languages. But while these give you a greater freedom of expression, most of them also put a series of hurdles in your way before you can successfully create, manipulate and share you first piece of software.
 
-**Distributed** - All cells exist in a single, globally shared hierarchy. It does not matter where a cell is physically located. It can be on your own computer or on any other in the network. It can seamlessly move between them and even be on multiple devices at once. 
+Imagine you are using some software that doesn't match your needs exactly, so you want to adapt it. The first thing you need to do is to **set-up** the supporting platform on your own system. If you're unlucky, this might require administration rights that you don't have or something else goes wrong and it ends up taking hours.
 
-**Cryptographic** - Every user can access any cell in this hierarchy, but only with the digitally signed permission of its owner. Therefore all user identities and permissions are secured by cryptographic algorithms and asymmetric keys.
+After that, you need to be able to *build* the system you want to change. This means you have to download all of its **dependencies**. If you're lucky, it's a single command. But you probably have to install additional tools to run it or external dependencies like databases. All of these come with their own potentially cumbersome setup requirements. And it might be that if you want to change just the version of a single dependency, the whole build fails.
 
-**Persistent** - Any change to a cell is automatically saved, along with the entire history of all changes, including possibly alternative timelines.
+All of this is necessary to turn a bunch of code into a running, working application. To change something, you have to manipulate that code. For that, you have to familiarize yourself with its **syntax** and obey it precisely. A single misplaced character will make the whole system impossible to run.
 
-**Dynamic** - A cell can receive messages and reacts to each according to its behaviour. A message is always a cell itself. By incorporating cells that react to certain messages, a cell can control how it looks and reacts to input. Apart from sending messages to other cells, no assumption is made about how the behaviour is defined.
+Besides spelling everything correctly, you also have to use thee right words, since every element of the system only understands a very limited vocabulary defined by its **programming interface**. If you're lucky, somebody wrote down somewhere what these words are, how they should be used and what they do. Otherwise you have to find out yourself by trial-and-error or reading the code which hopefully is accessible and uses the same syntax.
 
-**Abstractable** - Each cell is a specialization of another cell. The specialized cell inherits the behaviour and children of this stem cell which it is free to replace. This way, properties shared by several cells can be combined in a single, more abstract cell and do not need to be duplicated unnecessarily.
+Once you know the right words and syntax, you can make changes to the code. But in order to see their effects, you have to build the system and run it from zero, for every tiny change. And everytime you **lose your context** and have to recreate all state that you need to observe the changed behaviour.
 
+And even if you find a way to keep your context, you still need to continously switch between the environment in which the software runs and the one where you can edit its code. This **segregation** means that you cannot "look under the hood" of the running system. For each of its pieces you have to somehow find the corresponding code yourself.
 
-## How does this solve anything?
+And that's only the code. Usually apart from it you also have the data that your software either uses as input or generates as output. The thing with data is that in order to save it to your harddrive or send it over a network, it has to be **seriaalized** - transformed from reacting, rich, connected elements to a dead, flat and isolated string of ones and zeros. And everytime you want to use that data again, you have to interpret that string of ones and zeros and reconstitute all its context and meaning.
 
-The platform can be accessed through multiple interfaces, including a command line. But the most useful one is a virtual canvas that cells can draw themselves on, and through which the user can interact with them. The program needs no installation which minimizes the **set-up** costs. These can be further lowered by providing an implementation that runs inside a web-browser. Any cell can then be accessed and manipulated by simply opening a web site.
+That only works of course if the data has not been accidentally overwritten or deleted. For every bit of information you have to deal with **data safety** by making backups or prohibiting accidental actions. The same goes for the code.
 
-The canvas is used for displaying but also for modifying a cell, either directly through a context menu or by opening an *inspector* for it. The inspector shows the cell's hierarchy and provides a means for standard operations such as renaming, creating, deleting, setting the type and changing the behaviour of a cell. Having a single mode for editing and interaction removes the **segregation** of the two activities. The user can easily and at any time inspect and modify what they see.
+But you've taken all these hurdles and successfully created or manipulated your software and now you want to **share** it with the world because you're sure that others can profit from it as well. But how do you make sure it works on their computers? You decide it might be easier to just run it on your own computer and serialize everything back and forth. But now you need a big powerful machine which is costly to maintain or a lot of work or both.
 
-All this happens live while the cell is active and present on the canvas. In this **interactive** environment, the effect of any modification can be seen immediately. Spreadsheet-like applications, but also way more powerful programs can be built easily this way.
-
-**Data safety** is always provided since every change to a cell is automatically saved and also synchronized to all devices on which the cell exists. Having its history accessible means that changes can be easily analysed and old states restored. A global, infinite undo button.
-
-Using other cells as **dependencies** means simply executing them. Since this can be done as part of a cell's behaviour, there is not difference between internal libraries, external dependencies and applications. The uniformity of the structure allows everything to be accessed in the same way. Any version of a cell can be used by accessing its history, regardless of which version other cells might be depending on. Applications don't have to provide a specific application programming interface to be used by another program. The underlying structure of every cell can be accessed and used directly, enabling arbitrary combinations of capabilities.
-
-Since all cells use a uniform, generic structure that any data type can be mapped to, they never need to be **serialized** manually for communication with external services, nor for storage since they are automatically persisted.
-
-Because there is no serialization, there is no **syntax**. Instructions of a cell's behaviour are stored in a structured way instead of plain text. Although a higher-level language is necessary to describe behaviours efficiently, any syntax can be used to do so since every syntax can be translated to executing behaviours of composed and abstracted cells. It is even possible to translate between different high-level languages.
-
-Cells are always alive, so they can be directly queried to **discover** their capabilities. The platform can also be used to search cells with a certain capability for example with keywords or by providing an exemplary input and output. And if the cell's behaviour isn't exactly what is needed, it can easily be adjusted.
-
-Since every cell is accessible to every user, **sharing** a piece of software is done by simply sending its path to the other user. Cells render themselves, so the receiver is guaranteed that they're displayed to them in exactly the same way as to the creator. All changes are synchronized so both users can edit the cell collaboratively in real-time. The network load can be decreased by automatically replicating the cell on both devices.
-
-This way no third party is needed to create and share content. **Autonomy** is further increased by using asymmetric cryptographic keys as identification for users. This allows many operations to be done without a central authority. By using digital signatures, data can stay where it belongs - with its owner. This enables a truly open and democratic internet without the artificial switching costs caused by closed data.
-
-Cryptography also enables a high level of **security**. By default, a cell is only accessible to its owner, who has to digitally sign an explicit permission for anyone else to access it. Permissions can be very fine-grained, specifying the kind of access, its scope and expiration. Permissions are only asked for when needed so that the user can understand the reasons behind granting it, and the immediate effects of refusing it. All communication through untrusted channels is encrypted and a user can limit the devices that his cells are replicated to, to avoid them ending up somewhere in the clouds. Digital signatures make impersonations impossible and give each user a virtual identity with its own, valuable and verifiable reputation. And if we're lucky, this could make the internet a much friendlier place.
+Another problem with running your software on someonen else's computer is that you have to convince them that your software does not do anything bad to their machine, since every software they run can do everything they do, including reading and deleting personal files. And if instead you decide to only run it on your own computer, you're now responsible for the **security** of everybody's data. Good luck with that.
 
 
-## What's next?
+## How can we make it easier?
 
-The described software platform eliminates all incidental complications found in current platforms. The result is a new, a better web. A more open, more democratic, more flexible, more empowering and more secure platform to communicate through and with computers. A platform that allows everyone to participate and contribute freely and safely. A platform that makes writing software easy and fun - and accessible to everyone. A platform that enables software literacy. This is the goal of [zells](http://zells.org).
+None of these hurdles are essential to programming, but they all contribute to making software harder and more expensive than it has to be. Yet for every complication there is at least one software plattform that successfully avoids it. In order to make software cheaper and reduce training time to almost zero, we need a tool that avoids all of these incidental complications without decreasing power and limiting expressive freedom.
+
+The result would be a new, a better web of dynamic models. A more open, more democratic, more flexible, more empowering and more secure platform to communicate through and with computers. A platform that allows everyone to participate and contribute freely and safely. A platform that makes writing software easy and fun - and accessible to everyone. A platform that enables software literacy. This is the goal of [zells](http://zells.org).
