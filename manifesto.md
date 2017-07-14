@@ -51,7 +51,9 @@ And that's only the code. Usually apart from it you also have the data that your
 
 That only works of course if the data has not been accidentally overwritten or deleted. For every bit of information you have to deal with **data safety** by making backups or prohibiting accidental actions. The same goes for the code.
 
-But you've taken all these hurdles and successfully created or manipulated your software and now you want to **share** it with the world because you're sure that others can profit from it as well. But how do you make sure it works on their computers? You decide it might be easier to just run it on your own computer and serialize everything back and forth. But now you need a big powerful machine which is costly to maintain or a lot of work or both.
+But you've taken all these hurdles and successfully created or manipulated your software and now you want to **share** it with the world because you're sure that others can profit from it as well. But how do you make sure it works on their computers?
+
+So you decide it might be easier to just run it on your own computer and serialize everything back and forth. But now you need a big powerful machine which is costly to maintain or a lot of work or both. You also need to rent an address or add your software to a central repository. Seems like you can't share your creation without losing **autonomy**.
 
 Another problem with running your software on someonen else's computer is that you have to convince them that your software does not do anything bad to their machine, since every software they run can do everything they do, including reading and deleting personal files. And if instead you decide to only run it on your own computer, you're now responsible for the **security** of everybody's data. Good luck with that.
 
