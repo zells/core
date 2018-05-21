@@ -1,86 +1,75 @@
 # Enabling Software Literacy
 
-Computers are amazing. They let us connect with people on the other side of the globe, access endless streams of entertainment, be super heroes, discover new truths about our universe, and bring a million other wonders that would have been considered magic a four generations ago. And yet, we still live in the Dark Ages of computing.
+Computers are amazing. They let us connect with people on the other side of the globe, access endless streams of entertainment, be super heroes, discover new truths about our universe, and bring a million other wonders that would have been considered magic four generations ago. And yet, we still live in the Dark Ages of computing.
 
-## A New Medium
+In order to enable a general Software Literacy, we need to drastically reduce the cost of software by making it orders of magnitude easier to write, read, change and share. The goal is not to make everyone professional developers, but to enable every person to express their own ideas and access powerful ideas of others that could not be expressed in any other medium.
 
-Hundreds of years ago, before the Age of Enlightenment, producing texts was incredibly expensive. They had to be written on rare paper, and bundled up into bulky and fragile books. They could only be written by well trained professionals, were usually big and complicated, and therefore took a long time to write. Only the largest and wealthiest institutions could afford to create them, and controlled which texts were written and which were not. With a very small number of books, and reading being considered difficult to learn, people instead listened to their interpretations at weekly gatherings. It was free, easy and convenient.
+
+## Software as a Medium
+
+Hundreds of years ago, before the Age of Enlightenment, producing texts was incredibly expensive. They had to be written on rare paper and bundled up into bulky and fragile books. They could only be written by well trained professionals, were usually big and complicated, and therefore took a long time to write. Only the largest and wealthiest institutions could afford to create them, and controlled which texts were written and which were not. With a tiny number of books and reading being considered difficult to learn, people instead listened to their interpretations at weekly gatherings. It was free, easy and convenient.
 
 Few people could imagine a world of general literacy where text is virtually everywhere and almost everybody can access and contribute to the corpus of collective human knowledge. It required the invention of the printing press to make text production cheap enough to start an upward spiral of printed books and literate citizens, which ultimately lead to the Scientific Revolution.
 
-Four millennia after the first written word marked the beginning of history, the invention of the computer gave us a new medium, one of executable dynamic models - called software. Its potential to augment the human intellect was already described 50 years ago, still almost nobody is literate, let alone fluent in it.
+Four millennia after the first written word marked the beginning of history, the invention of the computer gave us a new medium, one of executable dynamic models - called software. It lets us express ideas not only statically, being identical for every consumer, but also dynamically, reacting to a changing world and interacting with its users. The potential of this new medium to augment the human intellect was already described 50 years ago, yet almost nobody is literate, let alone fluent in it.
 
-Instead of learning to express our own ideas, and understand those of others enough to change and reproduce them, we are content with the interpretations and options that user interfaces give us, making their designers our priests, their companies our churches, and their developers our monks.
+Instead of learning to express our own ideas, and understand those of others enough to change and reproduce them, we are content with the interpretations and options that user interfaces give us, making their designers our priests, their companies our churches, and their developers our monks. To enable Software Literacy, we need a printing press for software. A way to make software cheap enough to start a spiral of accessible dynamic models and literate citizens, which would lead to the next cognitive revolution.
 
-In order to enable a general Software Literacy, we need to drastically reduce the cost of producing software by making it orders of magnitude easier to write, read, change and share it. The goal is not to make everyone professional developers, but to enable every person to express their own ideas and access powerful ideas of others that could not be expressed in any other medium.
+
+## The Cost of Software
+
+How would you go about building this printing press for software? How about finding out what makes software expensive and trying to get rid of it. Hardware costs of course. But it's already becoming quickly cheaper and a single computer is enough to access the entire library all existing software in the world. Most of the cost comes from the required training. 
+
+There are two kinds of complications. There is essential complexity: Many ideas are inherently complex and require complex models. So controlling complexity is very important. Most software platforms are working on this, using strategies like immutability and encapsulation or making the machines smarter.
+
+Writing a novel or scientific paper is complex, no matter how good a tool you have. In a pinch pen and paper will do, which every literate person can use to write a letter to their friend. Everything that keeps your from reaching a comparatively simple goal is an accidental complication, which current software platforms have a lot of. So the strategy of this project is to reduce the cost of software by removing accidental complications: by identifying them and building a software writing and reading tool that actively avoids them - a tool that is as simple and yet as powerful as pen and paper.
+
+To find out what these complications are, let's follow a hypothetical coffee shop owner Mary who noticed that the queues in her shop are getting longer and longer. She wants to find out if she can increase the shop's throughput economically by hiring more staff or buying more machines. She thinks software can help her with this problem and indeed she finds a coffee shop simulation which seems to fit her needs. But after a first glance she realizes that it only simulates Cappuccinos, not the other five variants of coffee that she serves. Luckily, she is software literate and the simulation is open-source which means she can adapt it to her needs. Theoretically.
 
 
 ## Accidental Complications
 
+Mary's first challenge is to overcome the **segregation** of the execution and authoring environments of the simulation. To run it, all she had to do was download and open it. But to modify it, she has to find and download its source code, and build it - turning the code into its executable form.
+
+To do so, she needs to **set up** the programming platform that the simulation was written for. This includes downloading and installing another piece of software, which takes her "only" half an hour but she remembers another time when a whole day was gone before she had a platform installed and working.
+
+The next step is to download and install all the **dependencies**: pieces of software, so-called libraries, which the simulation depends on. Since many libraries depend on other libraries, most platforms have programs for downloading and installing all dependencies. But even with such a dependency manager, this step still feels like a lottery to Mary, since it either works or it doesn't. This time she is lucky. All libraries are successfully installed and it only took her two hours to build the coffee shop simulation from source. That's over a hundred times slower than just running it but she is still happy since it usually takes longer.
+
+In order to add the models of other kinds of coffee to the simulation, Mary has to learn the **syntax** of the programming language - the meaning and rules of its words and punctuation. Every language has a different syntax of which some a quite cryptic. Since Mary is not familiar with the one she has at hand, she makes many mistakes - mostly forgotten colons, parentheses or accidentally using spaces instead of tabs. These mistakes are even harder to find by the unhelpful error messages that she is presented with, instead of a simple "you forgot a colon here". The only clue she gets is the number of the line where the code stopped making sense which is sometimes miles aways from the actual mistake.
+
+Even once Mary learned to understand the syntax, in order to modify the simulation, she has to understand how it's built. But all she has to go by is **static text in files**, with very little hints on what a certain part is actually doing or how it is connected with other parts. It seems to her like the program was never intended to be read and understood by another person - and she might be right. She knows there is a well thought-out mental model hidden in these files, but it takes her hours to put the pieces together.
+
+She does it by using the scientific method: study the code, guess what a piece does, change it a little bit, run the program and see if she was right. While she likes being able to experiment with the model this way, she is annoyed that every time she wants to change a piece of code, she needs to restart the program, **losing its current** state. With every restart, she has to define how many machines and staff members there should be and how long it takes to grind the beans, brew the coffee and foam the milk.
+
+And even after she figured out, what a certain piece of the program does, she still has to **discover the protocol**, the very limited vocabulary and sentence structures that she can use to make the piece do what she wants it to do. There is documentation explaining some of the protocols, but more often than not they're outdated so she has to infer them from the code. Mary chuckles at the thought that her baristas would only understand "brew a coffee" or "make a coffee", but not both and you would have to look into their brains to find out which one it is.
+
+Eventually she figured it out and even found an open-source software that modeled how a frappuccino is made. Mary figured out how to integrate it into the simulation but was very disappointed when she realized that she couldn't use it since it was **written in another language**, even though the two languages were very similar. There was no other way - she had to rewrite the frapuccino model herself.
+
+Now that the simluation uses a model that fits her situation, Mary can find out what the total coffee throughput looks like for different numbers of staff and machines. She wants to save the simluation result for each scenario on the hard drive disk in order to compare them. Unfortunately, in order to transport data to another computer or device (including the disk), it requires a transformation into a one-dimensional structure - a long string of bits - called **serialization**. During this transformation, a lot of contextual information gets lost which has to recreated when reading the results back from disk.
+
+But even if the structure can be re-created, the lost context means that the correct **interpretation** is needed to make sense of the simluation results. So Mary has to make sure that she serializes them in exactly the format that her analyzer understands. It takes Mary several dozen tries to get it this fragile process right since, even the slightest deviation means she can't use the result at all. Lucky, she only uses very simple data and finally manages to save it in the correct format. More complex information, e.g. web pages, are almost impossible to interpret "correctly".
+
+After Mary simulated many different scenarios and is looking forward to the insights she might get from the collected data, she realized that she accidentally used the same file name for all scenarios. That means that all results except the last one were overridden. Because of this lack of **data safety**, she lost the results of several hours of work.
+
+Too frustrated to repeat all of it, Mary decides to push that to another day and instead wants to **share** the her creation to a friend Joe across town who also owns a coffee shop and might benefit from the simluation. This is quite difficult since he too has to set-up the platform, install all dependencies and build the program before he can run the simluation.
+
+The next day Joe calls Mary and asks why the simulation access his address book file where he keeps the personal information of his costumers. Mary is confused about this and after many hours of digging, she discovers that a library that was downloaded as a dependency of a dependency contained malicious code that searches for address book files and uploads them to a private forum on the Web. Because of **weak security** and a lack of control over what program may and may not do, the customers personal information got stolen.
+
+The next day a regular tells her that he thought the shop is closed because its Facebook page disappeared. Puzzled, Mary checks her emails and finds one from Facebook saying that her page was suspended because it "violated the terms and conditions" without any further details. After several weeks of emails and calls, Mary still doesn't know why her page was suspended. Because of her **lack of autonomy**, Facebook has complete control over her digital existence. But at least she doesn't have to worry about increasing the shops throughput anymore since without the Facebook page the number of her costumers has halved.
 
 
-------------------- Outline ----------------------
+## Benefits of Software Literacy
 
-## Introduction
+But even though devistated by stuggling with the numerous accidental complications of software development, Mary kept at her simluation project and eventually got it working securely and roustly.
 
-we live in dark ages of software
+In the end she is glad to be software literate, since it lets her with **understanding** all the physical and virtual things around her. Before, things like her cash register, ATMs or most apps on her phone were black boxes to her. Now she understand how they work, why if not, and what risks are involved when using them. The world seems a little less magical, but she enjoys the feeling that, if she wanted to, she could probably learn to build and control any of these things.
 
-comparison
-  library = computer
-  book = app/library/service
-  text = software
-  monks = developers
-  sermon = user interface
-  church = big corporates (Facebook, Amazon, Google And Apple)
-  
-central claim:
-  In order to enable Software Literacy, we need to drastically reduce the cost of creating software. This includes cost for hardware and training with training being the dominant factor. Not everybody needs to become a professional writer, but everybody should be able to express their own ideas in software and understand, use, change and combine ideas expressed by others. Literacy is not simply reading and writing, but being able to understand and formulate mental models.
+When putting an idea of herself into software, Mary also notices that she spends a lot of time thinking about her own thoughts and often times she realizes she only really understood a concept after finding a good name for it. This **thinking** about thinking eventually became second nature and not only helped her with her business, but also with personal problems, for example why she always was kinda angry when her parents visited. Noticing her thoughts and emotions helped her realized that this was because she never felt appreciated by her parents who always wanted her to be a politician like themselves.
 
+But there is nothing in the world she enjoys more than brewing an excellent coffee and seeing the smiles it creates. And she enjoys using software like the simulation for **learning** new things about her business by experimenting with different scenarios and seeing how things change.
 
-## Complications
+Software literacy also enables her to a more **scientific** approach to running her shop. Instead of gut feelings and anectodes, she is able to support her decisions with the data collected from simulations. Instinctively, she wouldn't have taken the risk of hiring a new staff member, but the data show that this will increase throughput (although not profit), which means she can support the local community by creating another job and making more people happy with a high quality dose of caffein.
 
-Example: Mary own a coffee shop and wants to find out if she can increase the shop's throughput by hiring more staff or buying more machines. She finds an open source simulation which she has to adapt to fit her situation.
+And once she had expressed an idea in software, she enjoys how easy it is to improve it by **collaborating** with her peers. After she made the simluation safe to run, Joe improved it quite a bit with his knowledge about coffee brewing. So together they could figure out the ideal working load for the machines, keeping them from getting too hot.
 
-- segregation - running is double-click, but how to edit
-- set-up
-- dependencies
-- syntax
-- difficulty of "reading" software - understanding the simulation's model
-- undiscoverable interfaces
-- losing context between restarts
-- not being able to access other languages
-- serialization - saving simulation data
-- data safety - code and data
-- difficulty of sharing
-- lack of security - customer data stolen by some minor dependency
-- lack of autonomy - Facebook page suspended because of mix-up
-
-
-## Motivation
-
-- understand what systems around you do
-- improve thinking skills by explicitly describing mental models (thinking about thinking)
-- learning and arguing by running experiments and simulations
-- collaboration by externalizing mental models
-- empowerment by solving your own problems
-
-
-## Pitch
-
-Claim: There are platforms that solve some of these complications quite well but none that avoids all of them.
-
-The goal of zells is to create a software platform that avoids all of these complications and therefore enable software literacy
-
-
------------- Notes -------------
-
-augment human intellect - Doug Engelbart
-
-Reducing the cost of software includes cost for hardware and training with training being the dominant factor. Not everybody needs to become a professional writer, but everybody should be able to express their own ideas in software and understand, use, change and combine ideas expressed by others.
-
-I love... computers, software and science
-I believe... that software literacy can bring a new enlightenment
-I am committed to... working on decreasing the cost of becoming fluent in the dynamic medium to enable a general software literacy
-
-Come and join me! Learn more about the project and contact me on zells.org
-
+But the one thing she likes the best about being software literate is how **empowering** it is. She can create her own simulations, set-up her own website and booking system and solve her own problems. She would never wanna give that up.
