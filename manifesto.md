@@ -1,19 +1,21 @@
-# Enabling Software Literacy
+# zells - Enabling Software Literacy
 
-Computers are amazing. They let us connect with people on the other side of the globe, access endless streams of entertainment, be super heroes, discover new truths about our universe, and bring a million other wonders that would have been considered magic four generations ago. And yet, we still live in the Dark Ages of computing.
+Computers are amazing. They let us connect with people on the other side of the globe, access endless streams of entertainment, be super heroes, discover new truths about our universe, and bring a million other wonders that would have been considered magic a couple of generations ago. And yet, in spite of these achievements, we still live in the Dark Ages of computing.
 
-In order to enable a general Software Literacy, we need to drastically reduce the cost of software by making it orders of magnitude easier to write, read, change and share. The goal is not to make everyone professional developers, but to enable every person to express their own ideas and access powerful ideas of others that could not be expressed in any other medium.
+To unleash the full power of computers, we need to increase the number of software literate people - people who can write and read software, not just use it. Just like most people aren't book authors today, the goal is not for everybody to be professional software developers, but to enable every person with access to a computer to express their own ideas, as well as understand and build upon powerful ideas of others through the medium of software.
+
+**The mission of *zells* is to achieve Universal Software Literacy by drastically decreasing the cost of writing, reading, changing and sharing dynamic models.**
 
 
 ## Software as a Medium
 
 Hundreds of years ago, before the Age of Enlightenment, producing texts was incredibly expensive. They had to be written on rare paper and bundled up into bulky and fragile books. They could only be written by well trained professionals, were usually big and complicated, and therefore took a long time to write. Only the largest and wealthiest institutions could afford to create them, and controlled which texts were written and which were not. With a tiny number of books and reading being considered difficult to learn, people instead listened to their interpretations at weekly gatherings. It was free, easy and convenient.
 
-Few people could imagine a world of general literacy where text is virtually everywhere and almost everybody can access and contribute to the corpus of collective human knowledge. It required the invention of the printing press to make text production cheap enough to start an upward spiral of printed books and literate citizens, which ultimately lead to the Scientific Revolution.
+Few people could imagine a world of universal literacy where text is virtually everywhere and almost everybody can access and contribute to the corpus of collective human knowledge. It required the invention of the printing press to make text production cheap enough to start an upward spiral of printed books and literate citizens, which ultimately lead to the Scientific Revolution.
 
-Four millennia after the first written word marked the beginning of history, the invention of the computer gave us a new medium, one of executable dynamic models - called software. It lets us express ideas not only statically, being identical for every consumer, but also dynamically, reacting to a changing world and interacting with its users. The potential of this new medium to augment the human intellect was already described 50 years ago, yet almost nobody is literate, let alone fluent in it.
+Four millennia after the first written word marked the beginning of history, the invention of the computer gave us a new medium, one of executable dynamic models - called software. It lets us express ideas not only statically - being identical for every consumer - but also dynamically - reacting to a changing world and interacting with its users. The potential of this new medium to augment the human intellect was already described 50 years ago, yet almost nobody is literate, let alone fluent in it.
 
-Instead of learning to express our own ideas, and understand those of others enough to change and reproduce them, we are content with the interpretations and options that user interfaces give us, making their designers our priests, their companies our churches, and their developers our monks. To enable Software Literacy, we need a printing press for software. A way to make software cheap enough to start a spiral of accessible dynamic models and literate citizens, which would lead to the next cognitive revolution.
+Instead of learning to express our own ideas, and understand those of others enough to change and reproduce them, we are content with the limited interpretations and options that user interfaces give us, making their designers our priests, their companies our churches, and their developers our monks. To enable Software Literacy, we need a printing press for software. A way to make software cheap enough to start a spiral of accessible dynamic models and literate citizens, which could lead to the next cognitive revolution.
 
 
 ## The Cost of Software
