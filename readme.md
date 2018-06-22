@@ -1,15 +1,15 @@
 # zells
 
-*zells* is a platform to create, modify, use and share any kind of software. Its design goal is to systematically remove all incidental complications that make programming unnecessarily difficult.
+*zells* is a platform to create, modify, use and share any kind of software. Its design goal is to systematically remove all accidental complications that make programming unnecessarily difficult.
 
-The mssion of *zells* is to enable software literacy by making writing and reading software easy and fun, and accessible to everyone. 
+The mission of zells is to work towards Universal Software Literacy by drastically decreasing the cost of writing, reading, changing, and sharing dynamic models.
 
 ## Documents
 
 This repository contains documents and specifications describing the *zells* computing platform.
 
 - **[Model](model.md)** - Describes the programming model of *zells*
-- **[Manifesto](manifesto.md)** - Describes the incidental complications of most programming tools
+- **[Manifesto](manifesto.md)** - Describes the vision of *zells* and accidental complications
 - **[Comparison](https://rawgit.com/zells/core/master/comparison.html)** - Compares incidental complications of existing platforms
 
 
