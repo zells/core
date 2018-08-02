@@ -1,5 +1,89 @@
 Status: draft
 
+[what's the target length? The shorter the better I guess. Maybe I don't even need section titles. Just one paragraph per section.]
+
+[what's the target audience? Mostly HN users I think. But it should be understandable for everyone. So all terms need to be defined.]
+
+[I have to find examples for everything.]
+
+# Enabling Software Literacy
+
+[introduction / summary + hook]
+
+
+## Dark Ages
+
+[what is the problem?]
+
+- producing software is expensive, like texts were
+- controlled by small elite
+- data silos?
+- spread of data without source?
+- maybe exactly define how software relates to text in terms of the analogy
+  -> explain the analogy here
+
+During the Dark Ages, producing texts was very expensive. It required highly trained experts to write and bind books. Therefore only very few people could read, the majority was content with the interpretations served at weekly gatherings. Only the wealthy could afford to produce books and controlled which ones were written, which ideas were spread.
+
+Same today. Software is text. Writing it is programming, creating and debugging executable dynamic models. GUIs only give interpreted access to a small controlled fraction to it, they are the priests. Reading is accessing and understanding the underlying models. A computer is pen, paper and reading glasses. A book is a cohesive model. The Internet is a library. Programmers are the monks. The tech giants are the churches.
+
+Stakes today are even higher. It's not just our thoughts that are controlled but our identities, relationships, and freedom of expression. Software is not just a dead/static expression of an idea, but a living/dynamic one. Much more powerful, because no brain is needed to interpret the idea. It can interpret itself, calculate implications itself. Example?
+
+
+## Enlightenment
+
+[why is this problem important?]
+
+- text literacy led to the scientific revolution and the age of enlightenment
+- all the good software can do
+- software literacy could lead to the next scientific revolution
+- understanding, learning, collaboration, empowerment, meta-cognition
+
+The scientific revolution ended the dark ages and started the Age of Enlightenment. Positive feedback loop of literate people and new published ideas. Euclid's Elements was the "killer application", second only to the Bible. Reading lead to new ideas written into new books lead to more reasons to become literate which again lead to more ideas.
+
+Understanding the virtual world like Physics, Chemistry and Biology help understanding the physical world. Faster learning through cheaper and otherwise impossible experiments. Improved meta-cognition by externalizing mental models. Easier collaboration by sharing these models. Empowerment by solving one's own problems.
+
+
+## Cost
+
+[why is this problem difficult?]
+
+- total cost: brain to brain
+- essential and accidental complexity
+- managing essential complexity focus of most
+- accidental complexity is main source in small projects
+- segregation, set-up, dependencies, syntax, comprehensibility, volatile state, invisible state, static documentation, language silos, serialization, interpretation, fragile data, sharing, security, autonomy
+
+How much does it cost to get this idea from your brain into other brains? Text: very cheap since for literate people. Software: very expensive even for literate people, incredibly expensive for illiterate people.
+
+Cost factors: training, essential complexity, accidental complexity. With low essential complexity, only training and accidental complexity.
+
+
+## Printing Press
+
+[how can this problem be solved?]
+
+- avoiding accidental complication
+- would not make complex problems easy
+- but easier to get started with simple problems
+- more accessible for everyone
+
+Avoid accidental complexity. Make simple thing incredibly simple. Would also help essential complexity. Reduce cost -> more software -> more literacy -> more software.
+
+
+## Up to us
+
+[join zells!]
+
+- mission statement
+- call to action
+
+
+
+--------------------------------------------------------------------------------------
+[previous version]
+
+[todo: add pictures/drawings?]
+
 # zells - Enabling Software Literacy
 
 Computers are amazing. They let us connect with friends on the other side of the globe, access endless streams of entertainment, be super heroes, discover new truths about our universe, and bring a million other wonders that would have been considered pure magic a couple of generations ago. And yet, in spite of these achievements, we still live in the Dark Ages of computing.
@@ -27,6 +111,7 @@ Instead of learning to express our own ideas, and understand those of others eno
 ## The Cost of Software
 
 [todo: define "accidental complications"]
+[todo: define cost in terms of "total cost of brain to brain"]
 
 To make software cheaper, we need to understand what it is that makes it expensive. The hardware necessary to run it is definitely a factor, but a rapidly decreasing one. Also, a single computer is enough to access the entire library of all existing software, so the contribution of hardware cost to each individual piece is tiny.
 
@@ -40,6 +125,8 @@ Writing a novel or reading a scientific paper is hard, because of essential comp
 
 
 ## Advantages of Software Literacy
+
+[todo: reformulate to fit rest of document. Maybe scratch?]
 
 But even though devastated by her struggles with the numerous accidental complications of software development, Mary kept at her simulation project and eventually got it working securely and robustly.
 
@@ -57,6 +144,8 @@ But the one thing she likes the best about being software literate is how **empo
 
 
 ## Software without Complications
+
+[todo: reformulate to fit rest of document]
 
 The vision of *zells* is a world in which people like Mary are able to take advantage of the full power of software, without having to struggle through accidental complications. A world where you can easily write, read, share and collaborate on ideas using dynamic models instead of static artifacts, without constantly having to solve problems that are not essential to your goal.
 
